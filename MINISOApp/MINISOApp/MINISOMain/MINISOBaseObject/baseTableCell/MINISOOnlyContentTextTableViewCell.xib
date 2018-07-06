@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MINISOOnlyContentTextTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="88"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9VZ-by-zfD">
+                    <rect key="frame" x="11" y="22" width="44" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="44" id="49O-oQ-QFm"/>
+                        <constraint firstAttribute="height" constant="44" id="jzU-Dk-GIy"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BwG-MS-XM2">
+                    <rect key="frame" x="70" y="33" width="290" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="22" id="vX6-Z7-4gZ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Bff-vl-bsk">
+                    <rect key="frame" x="0.0" y="87.5" width="375" height="0.5"/>
+                    <color key="backgroundColor" red="0.89803921568627454" green="0.89803921568627454" blue="0.89803921568627454" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="0.5" id="QRm-h7-KBf"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="BwG-MS-XM2" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="33" id="7H8-mC-04e"/>
+                <constraint firstItem="9VZ-by-zfD" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="22" id="Dlt-fh-Fcm"/>
+                <constraint firstAttribute="trailing" secondItem="Bff-vl-bsk" secondAttribute="trailing" id="HYb-MM-rfx"/>
+                <constraint firstItem="9VZ-by-zfD" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="11" id="NtD-cZ-qMT"/>
+                <constraint firstAttribute="trailing" secondItem="BwG-MS-XM2" secondAttribute="trailing" constant="15" id="UyP-aD-uh6"/>
+                <constraint firstItem="BwG-MS-XM2" firstAttribute="leading" secondItem="9VZ-by-zfD" secondAttribute="trailing" constant="15" id="Z4h-f2-qjI"/>
+                <constraint firstItem="Bff-vl-bsk" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="kEM-Z2-UfQ"/>
+                <constraint firstAttribute="bottom" secondItem="Bff-vl-bsk" secondAttribute="bottom" constant="0.5" id="khu-Xa-y6q"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="imageIcon" destination="9VZ-by-zfD" id="Iyi-P3-xSR"/>
+                <outlet property="titleLabel" destination="BwG-MS-XM2" id="GxF-s4-2aR"/>
+            </connections>
+        </view>
+    </objects>
+</document>
