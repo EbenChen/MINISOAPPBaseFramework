@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MINISOTabBarView.h"
 
-@interface MINISOTabBarController : UITabBarController
+@interface MINISOTabBarController : UITabBarController<MINISOTabBarViewDelegate>
+
+//设置TabBarView
+- (void)customTabBarSetting;
 
 @end

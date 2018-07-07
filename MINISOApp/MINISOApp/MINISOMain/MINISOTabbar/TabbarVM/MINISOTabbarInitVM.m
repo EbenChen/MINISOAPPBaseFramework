@@ -7,10 +7,12 @@
 //
 
 #import "MINISOTabbarInitVM.h"
-#import "MINISOTabBarView.h"
 #import "UITabBar+MINISOBadge.h"
+#import "UIImage+MINISOExtentsions.h"
 
 @implementation MINISOTabbarInitVM
+
+CGFloat const MINISOTabBarItemImageHeight = 25.0;
 
 - (MINISOTabBarController *)tabBarInitItemToKeyWindoForItemVC {
     [self tabBarItemModelInitForNative];
@@ -18,8 +20,13 @@
     MINISOHomeItemViewController *homeVC = [[MINISOHomeItemViewController alloc] init];
     homeVC.view.backgroundColor = MINISOWhiteColor;
     homeVC.tabBarItem.title = self.homeItemModel.itemName;
+    //设置标题和图片之间的间距
+    homeVC.tabBarItem.titlePositionAdjustment = UIOffsetMake(0.0f, 0.0f);
     homeVC.tabBarItem.image = [UIImage imageNamed:self.homeItemModel.itemDefaultIcon];
     homeVC.tabBarItem.selectedImage = [UIImage imageNamed:self.homeItemModel.itemSelectedIcon];
+    //设置图片的位置
+    homeVC.tabBarItem.imageInsets = UIEdgeInsetsMake(-(homeVC.tabBarItem.selectedImage.size.height - MINISOTabBarItemImageHeight) * 0.5, 0, (homeVC.tabBarItem.selectedImage.size.height - MINISOTabBarItemImageHeight) * 0.5, 0);
+
     //homeVC.tabBarItem.badgeValue = self.homeItemModel.itemBadgeValue;
     
     MINISOShoppingItemViewController *shoppingVC = [[MINISOShoppingItemViewController alloc] init];
@@ -30,10 +37,10 @@
     //shoppingVC.tabBarItem.badgeValue = self.shoppingItemModel.itemBadgeValue;
     
     MINISOOrdersItemViewController *ordersVC = [[MINISOOrdersItemViewController alloc] init];
-    ordersVC.view.backgroundColor = MINISOClearColor;
+    ordersVC.view.backgroundColor = MINISOGrayColor;
     ordersVC.tabBarItem.title = self.ordersItemModel.itemName;
-    ordersVC.tabBarItem.image = [UIImage imageNamed:self.ordersItemModel.itemDefaultIcon];
-    ordersVC.tabBarItem.selectedImage = [UIImage imageNamed:self.ordersItemModel.itemSelectedIcon];
+    ordersVC.tabBarItem.image = [UIImage imageWithColor:[UIColor whiteColor]];//[UIImage imageNamed:self.ordersItemModel.itemDefaultIcon];
+    ordersVC.tabBarItem.selectedImage = [UIImage imageWithColor:[UIColor whiteColor]];//[UIImage imageNamed:self.ordersItemModel.itemSelectedIcon];
     //ordersVC.tabBarItem.badgeValue = self.ordersItemModel.itemBadgeValue;
     
     MINISOVerbItemViewController *verbsVC = [[MINISOVerbItemViewController alloc] init];
@@ -58,10 +65,8 @@
     
     MINISOTabBarController *tabbarItemsVC = [[MINISOTabBarController alloc] init];
     tabbarItemsVC.viewControllers = @[homeVCNavigation, shoppingVCNavigation, ordersVCNavigation, verbsVCNavigation, centerVCNavigation];
+    [tabbarItemsVC customTabBarSetting];
     
-    //设置TabBarItem标题的字体颜色
-    MINISOTabBarView *customTabBarView = [[MINISOTabBarView alloc] initWithFrame:tabbarItemsVC.tabBar.bounds];
-    [customTabBarView tabBarViewSettingWithControllerAarrya:tabbarItemsVC.viewControllers];
     //设置TabBarBadgeView的值
     [self addTabBarBadgeViewValueToTabBar:tabbarItemsVC];
     
@@ -83,7 +88,6 @@
     self.shoppingItemModel.itemSelectedIcon = @"tabbarShoppingSelectedIcon";
     self.shoppingItemModel.itemBadgeValue = @"0";
     self.shoppingItemModel.itemIndex = 1;
-
     
     self.ordersItemModel = [[MINISOTabbarItemModel alloc] init];
     self.ordersItemModel.itemName = @"签到";
@@ -91,7 +95,6 @@
     self.ordersItemModel.itemSelectedIcon = @"tabbarOrdersSelectedIcon";
     self.ordersItemModel.itemBadgeValue = @"0";
     self.ordersItemModel.itemIndex = 2;
-
     
     self.verbsItemModel = [[MINISOTabbarItemModel alloc] init];
     self.verbsItemModel.itemName = @"扫码";
@@ -100,19 +103,16 @@
     self.verbsItemModel.itemBadgeValue = @"0";
     self.verbsItemModel.itemIndex = 3;
     
-    
     self.centerItemModel = [[MINISOTabbarItemModel alloc] init];
     self.centerItemModel.itemName = @"验货流程";
     self.centerItemModel.itemDefaultIcon = @"tabbarCenterIcon";
     self.centerItemModel.itemSelectedIcon = @"tabbarCenterSelectedIcon";
     self.centerItemModel.itemBadgeValue = @"-1";
     self.centerItemModel.itemIndex = 4;
-    
 }
 
 //处理初始化的小红点
 - (void)addTabBarBadgeViewValueToTabBar:(MINISOTabBarController *)currentTabBar {
-    
     
     if ([self.homeItemModel.itemBadgeValue isKindOfClass:[NSString class]]) {
         if ([self.homeItemModel.itemBadgeValue integerValue] > 0) {

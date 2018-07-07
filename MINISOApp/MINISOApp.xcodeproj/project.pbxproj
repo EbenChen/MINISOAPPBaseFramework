@@ -15,6 +15,8 @@
 		F52F52B520DA364D00647D7F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F52F52B420DA364D00647D7F /* main.m */; };
 		F52F52BF20DA364D00647D7F /* MINISOAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F52F52BE20DA364D00647D7F /* MINISOAppTests.m */; };
 		F52F52CA20DA364D00647D7F /* MINISOAppUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F52F52C920DA364D00647D7F /* MINISOAppUITests.m */; };
+		F52F727A20EF534A00CF2A8A /* UIImage+MINISOExtentsions.m in Sources */ = {isa = PBXBuildFile; fileRef = F52F727920EF534A00CF2A8A /* UIImage+MINISOExtentsions.m */; };
+		F52F727D20EF564600CF2A8A /* UIView+MINISOExtentsions.m in Sources */ = {isa = PBXBuildFile; fileRef = F52F727C20EF564600CF2A8A /* UIView+MINISOExtentsions.m */; };
 		F5397BA820E5FDF500E16713 /* MINISOUniversalTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = F5397BA720E5FDF500E16713 /* MINISOUniversalTableView.m */; };
 		F5397BAC20E6232B00E16713 /* MINISOOnlyContentTextTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F5397BAB20E6232B00E16713 /* MINISOOnlyContentTextTableViewCell.m */; };
 		F5397BAF20E6235700E16713 /* MINISOContentOneImageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F5397BAE20E6235700E16713 /* MINISOContentOneImageTableViewCell.m */; };
@@ -87,6 +89,10 @@
 		F52F52C520DA364D00647D7F /* MINISOAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MINISOAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F52F52C920DA364D00647D7F /* MINISOAppUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MINISOAppUITests.m; sourceTree = "<group>"; };
 		F52F52CB20DA364D00647D7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F52F727820EF534A00CF2A8A /* UIImage+MINISOExtentsions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+MINISOExtentsions.h"; sourceTree = "<group>"; };
+		F52F727920EF534A00CF2A8A /* UIImage+MINISOExtentsions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+MINISOExtentsions.m"; sourceTree = "<group>"; };
+		F52F727B20EF564600CF2A8A /* UIView+MINISOExtentsions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+MINISOExtentsions.h"; sourceTree = "<group>"; };
+		F52F727C20EF564600CF2A8A /* UIView+MINISOExtentsions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+MINISOExtentsions.m"; sourceTree = "<group>"; };
 		F5397BA620E5FDF500E16713 /* MINISOUniversalTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MINISOUniversalTableView.h; sourceTree = "<group>"; };
 		F5397BA720E5FDF500E16713 /* MINISOUniversalTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MINISOUniversalTableView.m; sourceTree = "<group>"; };
 		F5397BAA20E6232B00E16713 /* MINISOOnlyContentTextTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MINISOOnlyContentTextTableViewCell.h; sourceTree = "<group>"; };
@@ -404,6 +410,10 @@
 				F5E4FB4D20EA0F79002FC575 /* NSMutableDictionary+MINISOExtensions.m */,
 				F5E4FB4F20EA34EE002FC575 /* NSObject+MINISOExtensions.h */,
 				F5E4FB5020EA34EE002FC575 /* NSObject+MINISOExtensions.m */,
+				F52F727820EF534A00CF2A8A /* UIImage+MINISOExtentsions.h */,
+				F52F727920EF534A00CF2A8A /* UIImage+MINISOExtentsions.m */,
+				F52F727B20EF564600CF2A8A /* UIView+MINISOExtentsions.h */,
+				F52F727C20EF564600CF2A8A /* UIView+MINISOExtentsions.m */,
 			);
 			name = MINISOCategory;
 			path = MINISOApp/MINISOMain/MINISOCategory;
@@ -677,6 +687,7 @@
 				F59F49DE20E20C6E0062F261 /* MINISOBadgeView.m in Sources */,
 				F55DA42620E3840A004156E5 /* NSString+MINISOExtensions.m in Sources */,
 				F5C6699920DB994100F13D63 /* MINISOTabBarController.m in Sources */,
+				F52F727D20EF564600CF2A8A /* UIView+MINISOExtentsions.m in Sources */,
 				F5397BB220E6237500E16713 /* MINISOContentMoreImageTableViewCell.m in Sources */,
 				F52F52AA20DA364C00647D7F /* ViewController.m in Sources */,
 				F59F49DB20E20C140062F261 /* UITabBar+MINISOBadge.m in Sources */,
@@ -695,6 +706,7 @@
 				F5C6698D20DB933700F13D63 /* MINISOOrdersItemViewController.m in Sources */,
 				F53A4ED120E48301009A1351 /* MINISOAppModelMirror.m in Sources */,
 				F53A4ECB20E46C04009A1351 /* MINISONetworkTypeKit.m in Sources */,
+				F52F727A20EF534A00CF2A8A /* UIImage+MINISOExtentsions.m in Sources */,
 				F58CCF7320DCA04800E2F8AA /* MINISOTabbarInitVM.m in Sources */,
 				F5397BAF20E6235700E16713 /* MINISOContentOneImageTableViewCell.m in Sources */,
 				F5C6698420DB90B900F13D63 /* MINISOHomeItemViewController.m in Sources */,

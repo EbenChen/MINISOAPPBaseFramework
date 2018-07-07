@@ -23,7 +23,6 @@
     
     self.delegate = self;
     
-    [self addTopPartingLineView];
 }
 
 - (void)viewDidAppear:(BOOL)animated {
@@ -49,6 +48,24 @@
 
 - (void)tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController {
     [tabBarController.tabBar clearTabBarItemRedPointForPosition:tabBarController.selectedIndex];
+}
+
+//custom method
+- (void)customTabBarSetting {
+    //设置TabBarItem标题的字体颜色
+    MINISOTabBarView *customTabBarView = [[MINISOTabBarView alloc] initWithFrame:self.tabBar.bounds];
+    [customTabBarView tabBarViewSettingWithControllerAarrya:self.viewControllers];
+    
+    customTabBarView.tabBarDelegate = self;
+    //kvc实质是修改了系统的_tabBar
+    [self setValue:customTabBarView forKeyPath:@"tabBar"];
+
+    [self addTopPartingLineView];
+}
+
+//MINISOTabBarViewDelegate
+- (void)tabBarCenterItemBtnClick:(MINISOTabBarView *)tabBar {
+    self.selectedIndex = 2;
 }
 
 @end
