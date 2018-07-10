@@ -18,6 +18,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
+    //test push
+    
     //初始化入口
     [self initTabBarVCToKeyWindos];
     

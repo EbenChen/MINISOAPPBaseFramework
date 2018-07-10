@@ -31,7 +31,7 @@
 }
 
 - (void)updateContentTextCellInformationForModel:(MINISOTLQListModel *)cellModel {
-    [self.imageIcon sd_setImageWithURL:[NSURL URLWithString:cellModel.icon] placeholderImage:[UIImage imageNamed:@""]];
+    [self.imageIcon sd_setImageWithURL:[NSURL URLWithString:cellModel.icon] placeholderImage:DEFAULT_SQUARE_IMG];
     self.titleLabel.text = cellModel.forum_name;
 }
 

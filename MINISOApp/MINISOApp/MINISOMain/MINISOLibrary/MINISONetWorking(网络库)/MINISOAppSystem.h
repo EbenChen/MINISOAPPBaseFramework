@@ -15,11 +15,6 @@ typedef NS_ENUM(NSInteger, SYSTEMKEY) {
     MINISO_SAP_SECURE_KEY = 3,
 };
 
-static NSString * const kAFCharactersToBeEscapedInQueryString =@":/?&=;+!@#$()',*";
-static NSString * AFPercentEscapedQueryStringValueFromStringWithEncoding(NSString *string, NSStringEncoding encoding) {
-    return (__bridge_transfer  NSString *)CFURLCreateStringByAddingPercentEscapes(kCFAllocatorDefault, (__bridge CFStringRef)string, NULL, (__bridge CFStringRef)kAFCharactersToBeEscapedInQueryString, CFStringConvertNSStringEncodingToEncoding(encoding));
-}
-
 @interface MINISOAppSystem : NSObject
 
 //获取app版本号

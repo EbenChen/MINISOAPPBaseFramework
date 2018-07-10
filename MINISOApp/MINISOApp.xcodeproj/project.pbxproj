@@ -7,7 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2ADF986C20F32E17004A205B /* MINISO_Contact_View.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ADF986920F32E16004A205B /* MINISO_Contact_View.m */; };
+		2ADF986D20F32E17004A205B /* MINISO_Contact_View.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2ADF986B20F32E17004A205B /* MINISO_Contact_View.xib */; };
+		2ADF987720F33551004A205B /* MINISO_SignIn_Propmt_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ADF987520F33551004A205B /* MINISO_SignIn_Propmt_ViewController.m */; };
+		2ADF987820F33551004A205B /* MINISO_SignIn_Propmt_ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2ADF987620F33551004A205B /* MINISO_SignIn_Propmt_ViewController.xib */; };
 		CF4B9D737AB4715CEDC241A5 /* libPods-MINISOApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 485E9DE0E17E84D73832EEC8 /* libPods-MINISOApp.a */; };
+		F518D21220F2EB4E00789C63 /* MINISOHomepageBannerView.m in Sources */ = {isa = PBXBuildFile; fileRef = F518D21120F2EB4E00789C63 /* MINISOHomepageBannerView.m */; };
+		F518D21420F2EB5D00789C63 /* MINISOHomepageBannerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F518D21320F2EB5D00789C63 /* MINISOHomepageBannerView.xib */; };
+		F518D21720F2EF6600789C63 /* MINISOAcceptsFactoryHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = F518D21620F2EF6600789C63 /* MINISOAcceptsFactoryHeaderView.m */; };
+		F518D21920F2EF7700789C63 /* MINISOAcceptsFactoryHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F518D21820F2EF7700789C63 /* MINISOAcceptsFactoryHeaderView.xib */; };
+		F518D21C20F2F00100789C63 /* MINISOSigninListView.m in Sources */ = {isa = PBXBuildFile; fileRef = F518D21B20F2F00100789C63 /* MINISOSigninListView.m */; };
+		F518D21E20F2F01500789C63 /* MINISOSigninListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F518D21D20F2F01500789C63 /* MINISOSigninListView.xib */; };
+		F518D22120F2F08800789C63 /* MINISOScavengingContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = F518D22020F2F08800789C63 /* MINISOScavengingContentView.m */; };
+		F518D22320F2F09500789C63 /* MINISOScavengingContentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F518D22220F2F09500789C63 /* MINISOScavengingContentView.xib */; };
+		F518D22620F2F14500789C63 /* MINISOGoodsInspectionMainView.m in Sources */ = {isa = PBXBuildFile; fileRef = F518D22520F2F14500789C63 /* MINISOGoodsInspectionMainView.m */; };
+		F518D22820F2F15200789C63 /* MINISOGoodsInspectionMainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F518D22720F2F15200789C63 /* MINISOGoodsInspectionMainView.xib */; };
+		F518D22B20F2F69D00789C63 /* acceptsFactoryMainModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F518D22A20F2F69D00789C63 /* acceptsFactoryMainModel.m */; };
+		F518D22E20F2F6F600789C63 /* signinMainModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F518D22D20F2F6F600789C63 /* signinMainModel.m */; };
+		F518D23120F2F72500789C63 /* sacvengingMainModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F518D23020F2F72500789C63 /* sacvengingMainModel.m */; };
+		F518D23420F2F73B00789C63 /* goodsInspectionMainModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F518D23320F2F73B00789C63 /* goodsInspectionMainModel.m */; };
+		F518D23C20F3002A00789C63 /* MINISOHomePageVM.m in Sources */ = {isa = PBXBuildFile; fileRef = F518D23B20F3002A00789C63 /* MINISOHomePageVM.m */; };
+		F518D23F20F3004700789C63 /* MINISOAcceptsFactoryVM.m in Sources */ = {isa = PBXBuildFile; fileRef = F518D23E20F3004700789C63 /* MINISOAcceptsFactoryVM.m */; };
+		F518D24220F3006100789C63 /* MINISOSigninVM.m in Sources */ = {isa = PBXBuildFile; fileRef = F518D24120F3006100789C63 /* MINISOSigninVM.m */; };
+		F518D24520F300B800789C63 /* MINISOScavengingVM.m in Sources */ = {isa = PBXBuildFile; fileRef = F518D24420F300B800789C63 /* MINISOScavengingVM.m */; };
+		F518D24820F300CE00789C63 /* MINISOGoodsInspectionVM.m in Sources */ = {isa = PBXBuildFile; fileRef = F518D24720F300CE00789C63 /* MINISOGoodsInspectionVM.m */; };
 		F52F52A720DA364C00647D7F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F52F52A620DA364C00647D7F /* AppDelegate.m */; };
 		F52F52AA20DA364C00647D7F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F52F52A920DA364C00647D7F /* ViewController.m */; };
 		F52F52AF20DA364D00647D7F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F52F52AE20DA364D00647D7F /* Assets.xcassets */; };
@@ -15,8 +38,8 @@
 		F52F52B520DA364D00647D7F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F52F52B420DA364D00647D7F /* main.m */; };
 		F52F52BF20DA364D00647D7F /* MINISOAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F52F52BE20DA364D00647D7F /* MINISOAppTests.m */; };
 		F52F52CA20DA364D00647D7F /* MINISOAppUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F52F52C920DA364D00647D7F /* MINISOAppUITests.m */; };
-		F52F727A20EF534A00CF2A8A /* UIImage+MINISOExtentsions.m in Sources */ = {isa = PBXBuildFile; fileRef = F52F727920EF534A00CF2A8A /* UIImage+MINISOExtentsions.m */; };
-		F52F727D20EF564600CF2A8A /* UIView+MINISOExtentsions.m in Sources */ = {isa = PBXBuildFile; fileRef = F52F727C20EF564600CF2A8A /* UIView+MINISOExtentsions.m */; };
+		F52F727A20EF534A00CF2A8A /* UIImage+MINISOExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = F52F727920EF534A00CF2A8A /* UIImage+MINISOExtensions.m */; };
+		F52F727D20EF564600CF2A8A /* UIView+MINISOExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = F52F727C20EF564600CF2A8A /* UIView+MINISOExtensions.m */; };
 		F5397BA820E5FDF500E16713 /* MINISOUniversalTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = F5397BA720E5FDF500E16713 /* MINISOUniversalTableView.m */; };
 		F5397BAC20E6232B00E16713 /* MINISOOnlyContentTextTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F5397BAB20E6232B00E16713 /* MINISOOnlyContentTextTableViewCell.m */; };
 		F5397BAF20E6235700E16713 /* MINISOContentOneImageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F5397BAE20E6235700E16713 /* MINISOContentOneImageTableViewCell.m */; };
@@ -37,6 +60,11 @@
 		F55DA42320E3753F004156E5 /* MINISOAppSystem.m in Sources */ = {isa = PBXBuildFile; fileRef = F55DA42220E3753F004156E5 /* MINISOAppSystem.m */; };
 		F55DA42620E3840A004156E5 /* NSString+MINISOExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = F55DA42520E3840A004156E5 /* NSString+MINISOExtensions.m */; };
 		F55DA42920E3980B004156E5 /* NSDate+MINISOExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = F55DA42820E3980B004156E5 /* NSDate+MINISOExtensions.m */; };
+		F58B1C6C20F443FD00A8EBFA /* MINISOCustomNavigationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F58B1C6B20F443FD00A8EBFA /* MINISOCustomNavigationVC.m */; };
+		F58B1C7020F44F0C00A8EBFA /* homePageTempListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F58B1C6E20F44F0C00A8EBFA /* homePageTempListVC.m */; };
+		F58B1C7120F44F0C00A8EBFA /* homePageTempListVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F58B1C6F20F44F0C00A8EBFA /* homePageTempListVC.xib */; };
+		F58B1C7420F4856E00A8EBFA /* UINavigationController+MINISOExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = F58B1C7320F4856E00A8EBFA /* UINavigationController+MINISOExtensions.m */; };
+		F58B1C7720F48ED400A8EBFA /* UINavigationItem+MINISOExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = F58B1C7620F48ED400A8EBFA /* UINavigationItem+MINISOExtensions.m */; };
 		F58CCF7320DCA04800E2F8AA /* MINISOTabbarInitVM.m in Sources */ = {isa = PBXBuildFile; fileRef = F58CCF7220DCA04800E2F8AA /* MINISOTabbarInitVM.m */; };
 		F58CCF7620DCA7D700E2F8AA /* MINISOTabBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = F58CCF7520DCA7D700E2F8AA /* MINISOTabBarView.m */; };
 		F59F49DB20E20C140062F261 /* UITabBar+MINISOBadge.m in Sources */ = {isa = PBXBuildFile; fileRef = F59F49DA20E20C140062F261 /* UITabBar+MINISOBadge.m */; };
@@ -47,7 +75,6 @@
 		F5C6698D20DB933700F13D63 /* MINISOOrdersItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5C6698C20DB933700F13D63 /* MINISOOrdersItemViewController.m */; };
 		F5C6699020DB938200F13D63 /* MINISOVerbItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5C6698F20DB938200F13D63 /* MINISOVerbItemViewController.m */; };
 		F5C6699320DB939600F13D63 /* MINISOCenterItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5C6699220DB939600F13D63 /* MINISOCenterItemViewController.m */; };
-		F5C6699620DB98DF00F13D63 /* MINISOInitItemVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F5C6699520DB98DF00F13D63 /* MINISOInitItemVC.m */; };
 		F5C6699920DB994100F13D63 /* MINISOTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5C6699820DB994100F13D63 /* MINISOTabBarController.m */; };
 		F5E4FB4E20EA0F79002FC575 /* NSMutableDictionary+MINISOExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = F5E4FB4D20EA0F79002FC575 /* NSMutableDictionary+MINISOExtensions.m */; };
 		F5E4FB5120EA34EE002FC575 /* NSObject+MINISOExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = F5E4FB5020EA34EE002FC575 /* NSObject+MINISOExtensions.m */; };
@@ -71,9 +98,48 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2ADF986920F32E16004A205B /* MINISO_Contact_View.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MINISO_Contact_View.m; sourceTree = "<group>"; };
+		2ADF986A20F32E17004A205B /* MINISO_Contact_View.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MINISO_Contact_View.h; sourceTree = "<group>"; };
+		2ADF986B20F32E17004A205B /* MINISO_Contact_View.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MINISO_Contact_View.xib; sourceTree = "<group>"; };
+		2ADF987420F33551004A205B /* MINISO_SignIn_Propmt_ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MINISO_SignIn_Propmt_ViewController.h; sourceTree = "<group>"; };
+		2ADF987520F33551004A205B /* MINISO_SignIn_Propmt_ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MINISO_SignIn_Propmt_ViewController.m; sourceTree = "<group>"; };
+		2ADF987620F33551004A205B /* MINISO_SignIn_Propmt_ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MINISO_SignIn_Propmt_ViewController.xib; sourceTree = "<group>"; };
 		485E9DE0E17E84D73832EEC8 /* libPods-MINISOApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MINISOApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA310854E8392E1C320979C4 /* Pods-MINISOApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MINISOApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-MINISOApp/Pods-MINISOApp.release.xcconfig"; sourceTree = "<group>"; };
 		EE2BD20C140B8EC7D9997D11 /* Pods-MINISOApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MINISOApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MINISOApp/Pods-MINISOApp.debug.xcconfig"; sourceTree = "<group>"; };
+		F518D21020F2EB4E00789C63 /* MINISOHomepageBannerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MINISOHomepageBannerView.h; sourceTree = "<group>"; };
+		F518D21120F2EB4E00789C63 /* MINISOHomepageBannerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MINISOHomepageBannerView.m; sourceTree = "<group>"; };
+		F518D21320F2EB5D00789C63 /* MINISOHomepageBannerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MINISOHomepageBannerView.xib; sourceTree = "<group>"; };
+		F518D21520F2EF6600789C63 /* MINISOAcceptsFactoryHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MINISOAcceptsFactoryHeaderView.h; sourceTree = "<group>"; };
+		F518D21620F2EF6600789C63 /* MINISOAcceptsFactoryHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MINISOAcceptsFactoryHeaderView.m; sourceTree = "<group>"; };
+		F518D21820F2EF7700789C63 /* MINISOAcceptsFactoryHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MINISOAcceptsFactoryHeaderView.xib; sourceTree = "<group>"; };
+		F518D21A20F2F00100789C63 /* MINISOSigninListView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MINISOSigninListView.h; sourceTree = "<group>"; };
+		F518D21B20F2F00100789C63 /* MINISOSigninListView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MINISOSigninListView.m; sourceTree = "<group>"; };
+		F518D21D20F2F01500789C63 /* MINISOSigninListView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MINISOSigninListView.xib; sourceTree = "<group>"; };
+		F518D21F20F2F08800789C63 /* MINISOScavengingContentView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MINISOScavengingContentView.h; sourceTree = "<group>"; };
+		F518D22020F2F08800789C63 /* MINISOScavengingContentView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MINISOScavengingContentView.m; sourceTree = "<group>"; };
+		F518D22220F2F09500789C63 /* MINISOScavengingContentView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MINISOScavengingContentView.xib; sourceTree = "<group>"; };
+		F518D22420F2F14500789C63 /* MINISOGoodsInspectionMainView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MINISOGoodsInspectionMainView.h; sourceTree = "<group>"; };
+		F518D22520F2F14500789C63 /* MINISOGoodsInspectionMainView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MINISOGoodsInspectionMainView.m; sourceTree = "<group>"; };
+		F518D22720F2F15200789C63 /* MINISOGoodsInspectionMainView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MINISOGoodsInspectionMainView.xib; sourceTree = "<group>"; };
+		F518D22920F2F69D00789C63 /* acceptsFactoryMainModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = acceptsFactoryMainModel.h; sourceTree = "<group>"; };
+		F518D22A20F2F69D00789C63 /* acceptsFactoryMainModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = acceptsFactoryMainModel.m; sourceTree = "<group>"; };
+		F518D22C20F2F6F600789C63 /* signinMainModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = signinMainModel.h; sourceTree = "<group>"; };
+		F518D22D20F2F6F600789C63 /* signinMainModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = signinMainModel.m; sourceTree = "<group>"; };
+		F518D22F20F2F72500789C63 /* sacvengingMainModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = sacvengingMainModel.h; sourceTree = "<group>"; };
+		F518D23020F2F72500789C63 /* sacvengingMainModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = sacvengingMainModel.m; sourceTree = "<group>"; };
+		F518D23220F2F73B00789C63 /* goodsInspectionMainModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = goodsInspectionMainModel.h; sourceTree = "<group>"; };
+		F518D23320F2F73B00789C63 /* goodsInspectionMainModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = goodsInspectionMainModel.m; sourceTree = "<group>"; };
+		F518D23A20F3002A00789C63 /* MINISOHomePageVM.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MINISOHomePageVM.h; sourceTree = "<group>"; };
+		F518D23B20F3002A00789C63 /* MINISOHomePageVM.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MINISOHomePageVM.m; sourceTree = "<group>"; };
+		F518D23D20F3004700789C63 /* MINISOAcceptsFactoryVM.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MINISOAcceptsFactoryVM.h; sourceTree = "<group>"; };
+		F518D23E20F3004700789C63 /* MINISOAcceptsFactoryVM.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MINISOAcceptsFactoryVM.m; sourceTree = "<group>"; };
+		F518D24020F3006100789C63 /* MINISOSigninVM.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MINISOSigninVM.h; sourceTree = "<group>"; };
+		F518D24120F3006100789C63 /* MINISOSigninVM.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MINISOSigninVM.m; sourceTree = "<group>"; };
+		F518D24320F300B800789C63 /* MINISOScavengingVM.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MINISOScavengingVM.h; sourceTree = "<group>"; };
+		F518D24420F300B800789C63 /* MINISOScavengingVM.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MINISOScavengingVM.m; sourceTree = "<group>"; };
+		F518D24620F300CE00789C63 /* MINISOGoodsInspectionVM.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MINISOGoodsInspectionVM.h; sourceTree = "<group>"; };
+		F518D24720F300CE00789C63 /* MINISOGoodsInspectionVM.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MINISOGoodsInspectionVM.m; sourceTree = "<group>"; };
 		F52F52A220DA364C00647D7F /* MINISOApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MINISOApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F52F52A520DA364C00647D7F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F52F52A620DA364C00647D7F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -89,10 +155,10 @@
 		F52F52C520DA364D00647D7F /* MINISOAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MINISOAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F52F52C920DA364D00647D7F /* MINISOAppUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MINISOAppUITests.m; sourceTree = "<group>"; };
 		F52F52CB20DA364D00647D7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F52F727820EF534A00CF2A8A /* UIImage+MINISOExtentsions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+MINISOExtentsions.h"; sourceTree = "<group>"; };
-		F52F727920EF534A00CF2A8A /* UIImage+MINISOExtentsions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+MINISOExtentsions.m"; sourceTree = "<group>"; };
-		F52F727B20EF564600CF2A8A /* UIView+MINISOExtentsions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+MINISOExtentsions.h"; sourceTree = "<group>"; };
-		F52F727C20EF564600CF2A8A /* UIView+MINISOExtentsions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+MINISOExtentsions.m"; sourceTree = "<group>"; };
+		F52F727820EF534A00CF2A8A /* UIImage+MINISOExtensions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+MINISOExtensions.h"; sourceTree = "<group>"; };
+		F52F727920EF534A00CF2A8A /* UIImage+MINISOExtensions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+MINISOExtensions.m"; sourceTree = "<group>"; };
+		F52F727B20EF564600CF2A8A /* UIView+MINISOExtensions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+MINISOExtensions.h"; sourceTree = "<group>"; };
+		F52F727C20EF564600CF2A8A /* UIView+MINISOExtensions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+MINISOExtensions.m"; sourceTree = "<group>"; };
 		F5397BA620E5FDF500E16713 /* MINISOUniversalTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MINISOUniversalTableView.h; sourceTree = "<group>"; };
 		F5397BA720E5FDF500E16713 /* MINISOUniversalTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MINISOUniversalTableView.m; sourceTree = "<group>"; };
 		F5397BAA20E6232B00E16713 /* MINISOOnlyContentTextTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MINISOOnlyContentTextTableViewCell.h; sourceTree = "<group>"; };
@@ -130,6 +196,15 @@
 		F55DA42520E3840A004156E5 /* NSString+MINISOExtensions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+MINISOExtensions.m"; sourceTree = "<group>"; };
 		F55DA42720E3980B004156E5 /* NSDate+MINISOExtensions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDate+MINISOExtensions.h"; sourceTree = "<group>"; };
 		F55DA42820E3980B004156E5 /* NSDate+MINISOExtensions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDate+MINISOExtensions.m"; sourceTree = "<group>"; };
+		F58B1C6A20F443FD00A8EBFA /* MINISOCustomNavigationVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MINISOCustomNavigationVC.h; sourceTree = "<group>"; };
+		F58B1C6B20F443FD00A8EBFA /* MINISOCustomNavigationVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MINISOCustomNavigationVC.m; sourceTree = "<group>"; };
+		F58B1C6D20F44F0C00A8EBFA /* homePageTempListVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = homePageTempListVC.h; sourceTree = "<group>"; };
+		F58B1C6E20F44F0C00A8EBFA /* homePageTempListVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = homePageTempListVC.m; sourceTree = "<group>"; };
+		F58B1C6F20F44F0C00A8EBFA /* homePageTempListVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = homePageTempListVC.xib; sourceTree = "<group>"; };
+		F58B1C7220F4856E00A8EBFA /* UINavigationController+MINISOExtensions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+MINISOExtensions.h"; sourceTree = "<group>"; };
+		F58B1C7320F4856E00A8EBFA /* UINavigationController+MINISOExtensions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+MINISOExtensions.m"; sourceTree = "<group>"; };
+		F58B1C7520F48ED400A8EBFA /* UINavigationItem+MINISOExtensions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UINavigationItem+MINISOExtensions.h"; sourceTree = "<group>"; };
+		F58B1C7620F48ED400A8EBFA /* UINavigationItem+MINISOExtensions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UINavigationItem+MINISOExtensions.m"; sourceTree = "<group>"; };
 		F58CCF7120DCA04800E2F8AA /* MINISOTabbarInitVM.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MINISOTabbarInitVM.h; sourceTree = "<group>"; };
 		F58CCF7220DCA04800E2F8AA /* MINISOTabbarInitVM.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MINISOTabbarInitVM.m; sourceTree = "<group>"; };
 		F58CCF7420DCA7D700E2F8AA /* MINISOTabBarView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MINISOTabBarView.h; sourceTree = "<group>"; };
@@ -151,8 +226,6 @@
 		F5C6698F20DB938200F13D63 /* MINISOVerbItemViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MINISOVerbItemViewController.m; sourceTree = "<group>"; };
 		F5C6699120DB939600F13D63 /* MINISOCenterItemViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MINISOCenterItemViewController.h; sourceTree = "<group>"; };
 		F5C6699220DB939600F13D63 /* MINISOCenterItemViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MINISOCenterItemViewController.m; sourceTree = "<group>"; };
-		F5C6699420DB98DF00F13D63 /* MINISOInitItemVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MINISOInitItemVC.h; sourceTree = "<group>"; };
-		F5C6699520DB98DF00F13D63 /* MINISOInitItemVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MINISOInitItemVC.m; sourceTree = "<group>"; };
 		F5C6699720DB994100F13D63 /* MINISOTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MINISOTabBarController.h; sourceTree = "<group>"; };
 		F5C6699820DB994100F13D63 /* MINISOTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MINISOTabBarController.m; sourceTree = "<group>"; };
 		F5E4FB4A20E9B85A002FC575 /* MINISOAPPConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MINISOAPPConfig.h; sourceTree = "<group>"; };
@@ -197,6 +270,24 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		2ADF986720F32DAB004A205B /* PublicClass */ = {
+			isa = PBXGroup;
+			children = (
+				2ADF986820F32DEA004A205B /* View */,
+			);
+			path = PublicClass;
+			sourceTree = "<group>";
+		};
+		2ADF986820F32DEA004A205B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2ADF986A20F32E17004A205B /* MINISO_Contact_View.h */,
+				2ADF986920F32E16004A205B /* MINISO_Contact_View.m */,
+				2ADF986B20F32E17004A205B /* MINISO_Contact_View.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		52DDB537109AE2D77492C9DC /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -206,9 +297,214 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		F518D20120F2E36F00789C63 /* HomepageBusinessVC(首页) */ = {
+			isa = PBXGroup;
+			children = (
+				F5C6698220DB90B900F13D63 /* MINISOHomeItemViewController.h */,
+				F5C6698320DB90B900F13D63 /* MINISOHomeItemViewController.m */,
+				F58B1C6D20F44F0C00A8EBFA /* homePageTempListVC.h */,
+				F58B1C6E20F44F0C00A8EBFA /* homePageTempListVC.m */,
+				F58B1C6F20F44F0C00A8EBFA /* homePageTempListVC.xib */,
+			);
+			path = "HomepageBusinessVC(首页)";
+			sourceTree = "<group>";
+		};
+		F518D20220F2E38A00789C63 /* GoodsInspectionBusinessVC(验货) */ = {
+			isa = PBXGroup;
+			children = (
+				F5C6698520DB92A800F13D63 /* MINISOShoppingItemViewController.h */,
+				F5C6698620DB92A800F13D63 /* MINISOShoppingItemViewController.m */,
+			);
+			path = "GoodsInspectionBusinessVC(验货)";
+			sourceTree = "<group>";
+		};
+		F518D20320F2E38F00789C63 /* ScavengingBusinessVC(扫码) */ = {
+			isa = PBXGroup;
+			children = (
+				F5C6698E20DB938200F13D63 /* MINISOVerbItemViewController.h */,
+				F5C6698F20DB938200F13D63 /* MINISOVerbItemViewController.m */,
+			);
+			path = "ScavengingBusinessVC(扫码)";
+			sourceTree = "<group>";
+		};
+		F518D20420F2E39200789C63 /* SigninBusinessVC(签到) */ = {
+			isa = PBXGroup;
+			children = (
+				F5C6699120DB939600F13D63 /* MINISOCenterItemViewController.h */,
+				F5C6699220DB939600F13D63 /* MINISOCenterItemViewController.m */,
+				2ADF987420F33551004A205B /* MINISO_SignIn_Propmt_ViewController.h */,
+				2ADF987520F33551004A205B /* MINISO_SignIn_Propmt_ViewController.m */,
+				2ADF987620F33551004A205B /* MINISO_SignIn_Propmt_ViewController.xib */,
+			);
+			path = "SigninBusinessVC(签到)";
+			sourceTree = "<group>";
+		};
+		F518D20520F2E39700789C63 /* AcceptsFactoryBusinessVC(接受验厂) */ = {
+			isa = PBXGroup;
+			children = (
+				F5C6698B20DB933700F13D63 /* MINISOOrdersItemViewController.h */,
+				F5C6698C20DB933700F13D63 /* MINISOOrdersItemViewController.m */,
+			);
+			path = "AcceptsFactoryBusinessVC(接受验厂)";
+			sourceTree = "<group>";
+		};
+		F518D20620F2E8C600789C63 /* HomepageView */ = {
+			isa = PBXGroup;
+			children = (
+				F518D21020F2EB4E00789C63 /* MINISOHomepageBannerView.h */,
+				F518D21120F2EB4E00789C63 /* MINISOHomepageBannerView.m */,
+				F518D21320F2EB5D00789C63 /* MINISOHomepageBannerView.xib */,
+			);
+			path = HomepageView;
+			sourceTree = "<group>";
+		};
+		F518D20720F2E8DC00789C63 /* GoodsInspectionView */ = {
+			isa = PBXGroup;
+			children = (
+				F518D22420F2F14500789C63 /* MINISOGoodsInspectionMainView.h */,
+				F518D22520F2F14500789C63 /* MINISOGoodsInspectionMainView.m */,
+				F518D22720F2F15200789C63 /* MINISOGoodsInspectionMainView.xib */,
+			);
+			path = GoodsInspectionView;
+			sourceTree = "<group>";
+		};
+		F518D20820F2E8EA00789C63 /* ScavengingView */ = {
+			isa = PBXGroup;
+			children = (
+				F518D21F20F2F08800789C63 /* MINISOScavengingContentView.h */,
+				F518D22020F2F08800789C63 /* MINISOScavengingContentView.m */,
+				F518D22220F2F09500789C63 /* MINISOScavengingContentView.xib */,
+			);
+			path = ScavengingView;
+			sourceTree = "<group>";
+		};
+		F518D20920F2E8ED00789C63 /* SigninView */ = {
+			isa = PBXGroup;
+			children = (
+				F518D21A20F2F00100789C63 /* MINISOSigninListView.h */,
+				F518D21B20F2F00100789C63 /* MINISOSigninListView.m */,
+				F518D21D20F2F01500789C63 /* MINISOSigninListView.xib */,
+			);
+			path = SigninView;
+			sourceTree = "<group>";
+		};
+		F518D20A20F2E8F200789C63 /* AcceptsFactoryView */ = {
+			isa = PBXGroup;
+			children = (
+				F518D21520F2EF6600789C63 /* MINISOAcceptsFactoryHeaderView.h */,
+				F518D21620F2EF6600789C63 /* MINISOAcceptsFactoryHeaderView.m */,
+				F518D21820F2EF7700789C63 /* MINISOAcceptsFactoryHeaderView.xib */,
+			);
+			path = AcceptsFactoryView;
+			sourceTree = "<group>";
+		};
+		F518D20B20F2E92600789C63 /* GoodsInspectionModel */ = {
+			isa = PBXGroup;
+			children = (
+				F518D23220F2F73B00789C63 /* goodsInspectionMainModel.h */,
+				F518D23320F2F73B00789C63 /* goodsInspectionMainModel.m */,
+			);
+			path = GoodsInspectionModel;
+			sourceTree = "<group>";
+		};
+		F518D20C20F2E92D00789C63 /* SacvengingModel */ = {
+			isa = PBXGroup;
+			children = (
+				F518D22F20F2F72500789C63 /* sacvengingMainModel.h */,
+				F518D23020F2F72500789C63 /* sacvengingMainModel.m */,
+			);
+			path = SacvengingModel;
+			sourceTree = "<group>";
+		};
+		F518D20D20F2E93000789C63 /* SigninModel */ = {
+			isa = PBXGroup;
+			children = (
+				F518D22C20F2F6F600789C63 /* signinMainModel.h */,
+				F518D22D20F2F6F600789C63 /* signinMainModel.m */,
+			);
+			path = SigninModel;
+			sourceTree = "<group>";
+		};
+		F518D20E20F2E93300789C63 /* AcceptsFactoryModel */ = {
+			isa = PBXGroup;
+			children = (
+				F518D22920F2F69D00789C63 /* acceptsFactoryMainModel.h */,
+				F518D22A20F2F69D00789C63 /* acceptsFactoryMainModel.m */,
+			);
+			path = AcceptsFactoryModel;
+			sourceTree = "<group>";
+		};
+		F518D20F20F2E93700789C63 /* HomepageModel */ = {
+			isa = PBXGroup;
+			children = (
+				F53A4ED620E4B447009A1351 /* homePageModel.h */,
+				F53A4ED720E4B447009A1351 /* homePageModel.m */,
+				F53A4ED920E4C862009A1351 /* homePageDataModel.h */,
+				F53A4EDA20E4C862009A1351 /* homePageDataModel.m */,
+				F53A4EDC20E4C8DC009A1351 /* MINISOTLQListModel.h */,
+				F53A4EDD20E4C8DC009A1351 /* MINISOTLQListModel.m */,
+				F53A4EDF20E4C8EE009A1351 /* MINISOMMQListModel.h */,
+				F53A4EE020E4C8EE009A1351 /* MINISOMMQListModel.m */,
+			);
+			path = HomepageModel;
+			sourceTree = "<group>";
+		};
+		F518D23520F2F98C00789C63 /* GoodsInspectionVM */ = {
+			isa = PBXGroup;
+			children = (
+				F518D24620F300CE00789C63 /* MINISOGoodsInspectionVM.h */,
+				F518D24720F300CE00789C63 /* MINISOGoodsInspectionVM.m */,
+			);
+			path = GoodsInspectionVM;
+			sourceTree = "<group>";
+		};
+		F518D23620F2F99100789C63 /* ScavengingVM */ = {
+			isa = PBXGroup;
+			children = (
+				F518D24320F300B800789C63 /* MINISOScavengingVM.h */,
+				F518D24420F300B800789C63 /* MINISOScavengingVM.m */,
+			);
+			path = ScavengingVM;
+			sourceTree = "<group>";
+		};
+		F518D23720F2F99300789C63 /* SigninVM */ = {
+			isa = PBXGroup;
+			children = (
+				F518D24020F3006100789C63 /* MINISOSigninVM.h */,
+				F518D24120F3006100789C63 /* MINISOSigninVM.m */,
+			);
+			path = SigninVM;
+			sourceTree = "<group>";
+		};
+		F518D23820F2F99600789C63 /* AcceptsFactoryVM */ = {
+			isa = PBXGroup;
+			children = (
+				F518D23D20F3004700789C63 /* MINISOAcceptsFactoryVM.h */,
+				F518D23E20F3004700789C63 /* MINISOAcceptsFactoryVM.m */,
+			);
+			path = AcceptsFactoryVM;
+			sourceTree = "<group>";
+		};
+		F518D23920F2F99900789C63 /* HomepageVM */ = {
+			isa = PBXGroup;
+			children = (
+				F518D23A20F3002A00789C63 /* MINISOHomePageVM.h */,
+				F518D23B20F3002A00789C63 /* MINISOHomePageVM.m */,
+			);
+			path = HomepageVM;
+			sourceTree = "<group>";
+		};
+		F518D24920F3010100789C63 /* MINISOLogin(登陆) */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "MINISOLogin(登陆)";
+			sourceTree = "<group>";
+		};
 		F52167ED20DA53B7008F52C0 /* MINISOMain */ = {
 			isa = PBXGroup;
 			children = (
+				F58B1C6920F4436F00A8EBFA /* MINISONavigationController */,
 				F53A4ED220E4B3B0009A1351 /* MINISOBaseObject */,
 				F59F49D820E20B480062F261 /* MINISOCategory */,
 				F5C6698120DB902700F13D63 /* MINISOAPPConfig */,
@@ -233,8 +529,6 @@
 		F52167EF20DA5483008F52C0 /* TabbarVM */ = {
 			isa = PBXGroup;
 			children = (
-				F5C6699420DB98DF00F13D63 /* MINISOInitItemVC.h */,
-				F5C6699520DB98DF00F13D63 /* MINISOInitItemVC.m */,
 				F5C6699720DB994100F13D63 /* MINISOTabBarController.h */,
 				F5C6699820DB994100F13D63 /* MINISOTabBarController.m */,
 				F58CCF7120DCA04800E2F8AA /* MINISOTabbarInitVM.h */,
@@ -393,6 +687,15 @@
 			path = "MINISONetWorking(网络库)";
 			sourceTree = "<group>";
 		};
+		F58B1C6920F4436F00A8EBFA /* MINISONavigationController */ = {
+			isa = PBXGroup;
+			children = (
+				F58B1C6A20F443FD00A8EBFA /* MINISOCustomNavigationVC.h */,
+				F58B1C6B20F443FD00A8EBFA /* MINISOCustomNavigationVC.m */,
+			);
+			path = MINISONavigationController;
+			sourceTree = "<group>";
+		};
 		F59F49D820E20B480062F261 /* MINISOCategory */ = {
 			isa = PBXGroup;
 			children = (
@@ -410,10 +713,14 @@
 				F5E4FB4D20EA0F79002FC575 /* NSMutableDictionary+MINISOExtensions.m */,
 				F5E4FB4F20EA34EE002FC575 /* NSObject+MINISOExtensions.h */,
 				F5E4FB5020EA34EE002FC575 /* NSObject+MINISOExtensions.m */,
-				F52F727820EF534A00CF2A8A /* UIImage+MINISOExtentsions.h */,
-				F52F727920EF534A00CF2A8A /* UIImage+MINISOExtentsions.m */,
-				F52F727B20EF564600CF2A8A /* UIView+MINISOExtentsions.h */,
-				F52F727C20EF564600CF2A8A /* UIView+MINISOExtentsions.m */,
+				F52F727820EF534A00CF2A8A /* UIImage+MINISOExtensions.h */,
+				F52F727920EF534A00CF2A8A /* UIImage+MINISOExtensions.m */,
+				F52F727B20EF564600CF2A8A /* UIView+MINISOExtensions.h */,
+				F52F727C20EF564600CF2A8A /* UIView+MINISOExtensions.m */,
+				F58B1C7220F4856E00A8EBFA /* UINavigationController+MINISOExtensions.h */,
+				F58B1C7320F4856E00A8EBFA /* UINavigationController+MINISOExtensions.m */,
+				F58B1C7520F48ED400A8EBFA /* UINavigationItem+MINISOExtensions.h */,
+				F58B1C7620F48ED400A8EBFA /* UINavigationItem+MINISOExtensions.m */,
 			);
 			name = MINISOCategory;
 			path = MINISOApp/MINISOMain/MINISOCategory;
@@ -422,6 +729,7 @@
 		F5C6697A20DB902700F13D63 /* MINISOLibrary */ = {
 			isa = PBXGroup;
 			children = (
+				F518D24920F3010100789C63 /* MINISOLogin(登陆) */,
 				F55DA42020E33F3C004156E5 /* MINISONetWorking(网络库) */,
 				F55DA41F20E33F15004156E5 /* MINISOImage(图片库) */,
 			);
@@ -431,6 +739,7 @@
 		F5C6697B20DB902700F13D63 /* MINISOBusiness */ = {
 			isa = PBXGroup;
 			children = (
+				2ADF986720F32DAB004A205B /* PublicClass */,
 				F5C6697C20DB902700F13D63 /* BusinessVC */,
 				F5C6697D20DB902700F13D63 /* BusinessView */,
 				F5C6697E20DB902700F13D63 /* BusinessModel */,
@@ -442,16 +751,11 @@
 		F5C6697C20DB902700F13D63 /* BusinessVC */ = {
 			isa = PBXGroup;
 			children = (
-				F5C6698220DB90B900F13D63 /* MINISOHomeItemViewController.h */,
-				F5C6698320DB90B900F13D63 /* MINISOHomeItemViewController.m */,
-				F5C6698520DB92A800F13D63 /* MINISOShoppingItemViewController.h */,
-				F5C6698620DB92A800F13D63 /* MINISOShoppingItemViewController.m */,
-				F5C6698B20DB933700F13D63 /* MINISOOrdersItemViewController.h */,
-				F5C6698C20DB933700F13D63 /* MINISOOrdersItemViewController.m */,
-				F5C6698E20DB938200F13D63 /* MINISOVerbItemViewController.h */,
-				F5C6698F20DB938200F13D63 /* MINISOVerbItemViewController.m */,
-				F5C6699120DB939600F13D63 /* MINISOCenterItemViewController.h */,
-				F5C6699220DB939600F13D63 /* MINISOCenterItemViewController.m */,
+				F518D20120F2E36F00789C63 /* HomepageBusinessVC(首页) */,
+				F518D20520F2E39700789C63 /* AcceptsFactoryBusinessVC(接受验厂) */,
+				F518D20420F2E39200789C63 /* SigninBusinessVC(签到) */,
+				F518D20320F2E38F00789C63 /* ScavengingBusinessVC(扫码) */,
+				F518D20220F2E38A00789C63 /* GoodsInspectionBusinessVC(验货) */,
 			);
 			path = BusinessVC;
 			sourceTree = "<group>";
@@ -459,6 +763,11 @@
 		F5C6697D20DB902700F13D63 /* BusinessView */ = {
 			isa = PBXGroup;
 			children = (
+				F518D20620F2E8C600789C63 /* HomepageView */,
+				F518D20A20F2E8F200789C63 /* AcceptsFactoryView */,
+				F518D20920F2E8ED00789C63 /* SigninView */,
+				F518D20820F2E8EA00789C63 /* ScavengingView */,
+				F518D20720F2E8DC00789C63 /* GoodsInspectionView */,
 			);
 			path = BusinessView;
 			sourceTree = "<group>";
@@ -466,14 +775,11 @@
 		F5C6697E20DB902700F13D63 /* BusinessModel */ = {
 			isa = PBXGroup;
 			children = (
-				F53A4ED620E4B447009A1351 /* homePageModel.h */,
-				F53A4ED720E4B447009A1351 /* homePageModel.m */,
-				F53A4ED920E4C862009A1351 /* homePageDataModel.h */,
-				F53A4EDA20E4C862009A1351 /* homePageDataModel.m */,
-				F53A4EDC20E4C8DC009A1351 /* MINISOTLQListModel.h */,
-				F53A4EDD20E4C8DC009A1351 /* MINISOTLQListModel.m */,
-				F53A4EDF20E4C8EE009A1351 /* MINISOMMQListModel.h */,
-				F53A4EE020E4C8EE009A1351 /* MINISOMMQListModel.m */,
+				F518D20F20F2E93700789C63 /* HomepageModel */,
+				F518D20E20F2E93300789C63 /* AcceptsFactoryModel */,
+				F518D20D20F2E93000789C63 /* SigninModel */,
+				F518D20C20F2E92D00789C63 /* SacvengingModel */,
+				F518D20B20F2E92600789C63 /* GoodsInspectionModel */,
 			);
 			path = BusinessModel;
 			sourceTree = "<group>";
@@ -481,6 +787,11 @@
 		F5C6697F20DB902700F13D63 /* BusinessViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				F518D23920F2F99900789C63 /* HomepageVM */,
+				F518D23820F2F99600789C63 /* AcceptsFactoryVM */,
+				F518D23720F2F99300789C63 /* SigninVM */,
+				F518D23620F2F99100789C63 /* ScavengingVM */,
+				F518D23520F2F98C00789C63 /* GoodsInspectionVM */,
 			);
 			path = BusinessViewModel;
 			sourceTree = "<group>";
@@ -566,6 +877,7 @@
 		F52F529A20DA364C00647D7F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = MINISO_;
 				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = Ebenchen;
 				TargetAttributes = {
@@ -610,8 +922,16 @@
 				F52F52B220DA364D00647D7F /* LaunchScreen.storyboard in Resources */,
 				F5397BBF20E635DB00E16713 /* MINISOContentOneImageTableViewCell.xib in Resources */,
 				F5397BBD20E6355C00E16713 /* MINISOOnlyContentTextTableViewCell.xib in Resources */,
+				F518D21420F2EB5D00789C63 /* MINISOHomepageBannerView.xib in Resources */,
+				F518D22320F2F09500789C63 /* MINISOScavengingContentView.xib in Resources */,
+				F58B1C7120F44F0C00A8EBFA /* homePageTempListVC.xib in Resources */,
 				F5397BC120E6364400E16713 /* MINISOContentMoreImageTableViewCell.xib in Resources */,
 				F52F52AF20DA364D00647D7F /* Assets.xcassets in Resources */,
+				2ADF986D20F32E17004A205B /* MINISO_Contact_View.xib in Resources */,
+				F518D21920F2EF7700789C63 /* MINISOAcceptsFactoryHeaderView.xib in Resources */,
+				2ADF987820F33551004A205B /* MINISO_SignIn_Propmt_ViewController.xib in Resources */,
+				F518D21E20F2F01500789C63 /* MINISOSigninListView.xib in Resources */,
+				F518D22820F2F15200789C63 /* MINISOGoodsInspectionMainView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -675,41 +995,60 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2ADF986C20F32E17004A205B /* MINISO_Contact_View.m in Sources */,
 				F5397BA820E5FDF500E16713 /* MINISOUniversalTableView.m in Sources */,
 				F53A4ED520E4B3E2009A1351 /* MINISOApiBaseModel.m in Sources */,
+				F58B1C6C20F443FD00A8EBFA /* MINISOCustomNavigationVC.m in Sources */,
+				F518D23420F2F73B00789C63 /* goodsInspectionMainModel.m in Sources */,
+				F58B1C7720F48ED400A8EBFA /* UINavigationItem+MINISOExtensions.m in Sources */,
 				F5397BAC20E6232B00E16713 /* MINISOOnlyContentTextTableViewCell.m in Sources */,
 				F58CCF7620DCA7D700E2F8AA /* MINISOTabBarView.m in Sources */,
 				F5E4FB4E20EA0F79002FC575 /* NSMutableDictionary+MINISOExtensions.m in Sources */,
 				F5397BB520E626B400E16713 /* UITableView+MINISOExtensions.m in Sources */,
 				F53A4EDB20E4C862009A1351 /* homePageDataModel.m in Sources */,
+				2ADF987720F33551004A205B /* MINISO_SignIn_Propmt_ViewController.m in Sources */,
 				F55DA42320E3753F004156E5 /* MINISOAppSystem.m in Sources */,
 				F5C6698720DB92A900F13D63 /* MINISOShoppingItemViewController.m in Sources */,
 				F59F49DE20E20C6E0062F261 /* MINISOBadgeView.m in Sources */,
+				F518D24220F3006100789C63 /* MINISOSigninVM.m in Sources */,
 				F55DA42620E3840A004156E5 /* NSString+MINISOExtensions.m in Sources */,
+				F518D24820F300CE00789C63 /* MINISOGoodsInspectionVM.m in Sources */,
 				F5C6699920DB994100F13D63 /* MINISOTabBarController.m in Sources */,
-				F52F727D20EF564600CF2A8A /* UIView+MINISOExtentsions.m in Sources */,
+				F52F727D20EF564600CF2A8A /* UIView+MINISOExtensions.m in Sources */,
 				F5397BB220E6237500E16713 /* MINISOContentMoreImageTableViewCell.m in Sources */,
 				F52F52AA20DA364C00647D7F /* ViewController.m in Sources */,
+				F518D23120F2F72500789C63 /* sacvengingMainModel.m in Sources */,
+				F518D22E20F2F6F600789C63 /* signinMainModel.m in Sources */,
 				F59F49DB20E20C140062F261 /* UITabBar+MINISOBadge.m in Sources */,
 				F53A4ECE20E47BE5009A1351 /* MINISONetworkAuxiliaryKit.m in Sources */,
 				F5C6697920DB8AF400F13D63 /* MINISOTabbarItemModel.m in Sources */,
 				F53A4EC720E4689C009A1351 /* UIDevice+MINISOExtensions.m in Sources */,
 				F52F52B520DA364D00647D7F /* main.m in Sources */,
-				F5C6699620DB98DF00F13D63 /* MINISOInitItemVC.m in Sources */,
 				F55DA42920E3980B004156E5 /* NSDate+MINISOExtensions.m in Sources */,
 				F52F52A720DA364C00647D7F /* AppDelegate.m in Sources */,
+				F518D22B20F2F69D00789C63 /* acceptsFactoryMainModel.m in Sources */,
 				F53A4EE120E4C8EE009A1351 /* MINISOMMQListModel.m in Sources */,
 				F5C6699020DB938200F13D63 /* MINISOVerbItemViewController.m in Sources */,
 				F5E4FB5120EA34EE002FC575 /* NSObject+MINISOExtensions.m in Sources */,
+				F518D22120F2F08800789C63 /* MINISOScavengingContentView.m in Sources */,
 				F53A4EDE20E4C8DC009A1351 /* MINISOTLQListModel.m in Sources */,
 				F53A4ED820E4B447009A1351 /* homePageModel.m in Sources */,
 				F5C6698D20DB933700F13D63 /* MINISOOrdersItemViewController.m in Sources */,
 				F53A4ED120E48301009A1351 /* MINISOAppModelMirror.m in Sources */,
+				F58B1C7420F4856E00A8EBFA /* UINavigationController+MINISOExtensions.m in Sources */,
+				F518D23C20F3002A00789C63 /* MINISOHomePageVM.m in Sources */,
+				F58B1C7020F44F0C00A8EBFA /* homePageTempListVC.m in Sources */,
+				F518D21C20F2F00100789C63 /* MINISOSigninListView.m in Sources */,
+				F518D21720F2EF6600789C63 /* MINISOAcceptsFactoryHeaderView.m in Sources */,
+				F518D24520F300B800789C63 /* MINISOScavengingVM.m in Sources */,
 				F53A4ECB20E46C04009A1351 /* MINISONetworkTypeKit.m in Sources */,
-				F52F727A20EF534A00CF2A8A /* UIImage+MINISOExtentsions.m in Sources */,
+				F52F727A20EF534A00CF2A8A /* UIImage+MINISOExtensions.m in Sources */,
 				F58CCF7320DCA04800E2F8AA /* MINISOTabbarInitVM.m in Sources */,
+				F518D23F20F3004700789C63 /* MINISOAcceptsFactoryVM.m in Sources */,
 				F5397BAF20E6235700E16713 /* MINISOContentOneImageTableViewCell.m in Sources */,
 				F5C6698420DB90B900F13D63 /* MINISOHomeItemViewController.m in Sources */,
+				F518D22620F2F14500789C63 /* MINISOGoodsInspectionMainView.m in Sources */,
+				F518D21220F2EB4E00789C63 /* MINISOHomepageBannerView.m in Sources */,
 				F5C6699320DB939600F13D63 /* MINISOCenterItemViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -883,7 +1222,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.miniso.purchasePlatfrom;
+				PRODUCT_BUNDLE_IDENTIFIER = com.miniso.QualityAssuranceSystem;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -906,7 +1245,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.miniso.purchasePlatfrom;
+				PRODUCT_BUNDLE_IDENTIFIER = com.miniso.QualityAssuranceSystem;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
