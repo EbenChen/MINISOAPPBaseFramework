@@ -60,6 +60,8 @@
 		F55DA42320E3753F004156E5 /* MINISOAppSystem.m in Sources */ = {isa = PBXBuildFile; fileRef = F55DA42220E3753F004156E5 /* MINISOAppSystem.m */; };
 		F55DA42620E3840A004156E5 /* NSString+MINISOExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = F55DA42520E3840A004156E5 /* NSString+MINISOExtensions.m */; };
 		F55DA42920E3980B004156E5 /* NSDate+MINISOExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = F55DA42820E3980B004156E5 /* NSDate+MINISOExtensions.m */; };
+		F566A41520F5E7EE00EC9AB5 /* MBProgressHUD+MINISOExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = F566A41420F5E7EE00EC9AB5 /* MBProgressHUD+MINISOExtensions.m */; };
+		F566A41720F5E82D00EC9AB5 /* MBProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F566A41620F5E82D00EC9AB5 /* MBProgressHUD.bundle */; };
 		F58B1C6C20F443FD00A8EBFA /* MINISOCustomNavigationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F58B1C6B20F443FD00A8EBFA /* MINISOCustomNavigationVC.m */; };
 		F58B1C7020F44F0C00A8EBFA /* homePageTempListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F58B1C6E20F44F0C00A8EBFA /* homePageTempListVC.m */; };
 		F58B1C7120F44F0C00A8EBFA /* homePageTempListVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F58B1C6F20F44F0C00A8EBFA /* homePageTempListVC.xib */; };
@@ -196,6 +198,9 @@
 		F55DA42520E3840A004156E5 /* NSString+MINISOExtensions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+MINISOExtensions.m"; sourceTree = "<group>"; };
 		F55DA42720E3980B004156E5 /* NSDate+MINISOExtensions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDate+MINISOExtensions.h"; sourceTree = "<group>"; };
 		F55DA42820E3980B004156E5 /* NSDate+MINISOExtensions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDate+MINISOExtensions.m"; sourceTree = "<group>"; };
+		F566A41320F5E7EE00EC9AB5 /* MBProgressHUD+MINISOExtensions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+MINISOExtensions.h"; sourceTree = "<group>"; };
+		F566A41420F5E7EE00EC9AB5 /* MBProgressHUD+MINISOExtensions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+MINISOExtensions.m"; sourceTree = "<group>"; };
+		F566A41620F5E82D00EC9AB5 /* MBProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MBProgressHUD.bundle; sourceTree = "<group>"; };
 		F58B1C6A20F443FD00A8EBFA /* MINISOCustomNavigationVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MINISOCustomNavigationVC.h; sourceTree = "<group>"; };
 		F58B1C6B20F443FD00A8EBFA /* MINISOCustomNavigationVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MINISOCustomNavigationVC.m; sourceTree = "<group>"; };
 		F58B1C6D20F44F0C00A8EBFA /* homePageTempListVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = homePageTempListVC.h; sourceTree = "<group>"; };
@@ -721,6 +726,9 @@
 				F58B1C7320F4856E00A8EBFA /* UINavigationController+MINISOExtensions.m */,
 				F58B1C7520F48ED400A8EBFA /* UINavigationItem+MINISOExtensions.h */,
 				F58B1C7620F48ED400A8EBFA /* UINavigationItem+MINISOExtensions.m */,
+				F566A41320F5E7EE00EC9AB5 /* MBProgressHUD+MINISOExtensions.h */,
+				F566A41420F5E7EE00EC9AB5 /* MBProgressHUD+MINISOExtensions.m */,
+				F566A41620F5E82D00EC9AB5 /* MBProgressHUD.bundle */,
 			);
 			name = MINISOCategory;
 			path = MINISOApp/MINISOMain/MINISOCategory;
@@ -932,6 +940,7 @@
 				2ADF987820F33551004A205B /* MINISO_SignIn_Propmt_ViewController.xib in Resources */,
 				F518D21E20F2F01500789C63 /* MINISOSigninListView.xib in Resources */,
 				F518D22820F2F15200789C63 /* MINISOGoodsInspectionMainView.xib in Resources */,
+				F566A41720F5E82D00EC9AB5 /* MBProgressHUD.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1039,6 +1048,7 @@
 				F518D23C20F3002A00789C63 /* MINISOHomePageVM.m in Sources */,
 				F58B1C7020F44F0C00A8EBFA /* homePageTempListVC.m in Sources */,
 				F518D21C20F2F00100789C63 /* MINISOSigninListView.m in Sources */,
+				F566A41520F5E7EE00EC9AB5 /* MBProgressHUD+MINISOExtensions.m in Sources */,
 				F518D21720F2EF6600789C63 /* MINISOAcceptsFactoryHeaderView.m in Sources */,
 				F518D24520F300B800789C63 /* MINISOScavengingVM.m in Sources */,
 				F53A4ECB20E46C04009A1351 /* MINISONetworkTypeKit.m in Sources */,
@@ -1222,7 +1232,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.miniso.QualityAssuranceSystem;
+				PRODUCT_BUNDLE_IDENTIFIER = com.miniso.purchasePlatfrom;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1245,7 +1255,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.miniso.QualityAssuranceSystem;
+				PRODUCT_BUNDLE_IDENTIFIER = com.miniso.purchasePlatfrom;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";

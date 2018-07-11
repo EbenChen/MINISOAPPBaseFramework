@@ -49,7 +49,7 @@
 #define MINISORedColor [UIColor redColor]
 #define MINISOTabBarTitleDefaultColor RGBSAMECOLOR(113)
 #define MINISOTabBarTitleSelectedColor RGBCOLOR(100, 174, 234)
-#define MINISONavigationBgColor RGBCOLOR(54,134,213)
+#define MINISONavigationBgColor RGBCOLOR(133,134,213)
 #define MINISONavigationTitleColor [UIColor whiteColor]
 #define MINISONavigationTintColor [UIColor whiteColor]
 

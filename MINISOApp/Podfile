@@ -7,4 +7,5 @@ pod 'OpenUDID', '~>1.0'
 pod 'MJExtension'
 pod 'MJRefresh'
 pod 'SDWebImage'
+pod 'MBProgressHUD'
 end
