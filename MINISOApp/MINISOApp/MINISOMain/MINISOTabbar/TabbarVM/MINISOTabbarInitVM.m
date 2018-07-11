@@ -8,7 +8,7 @@
 
 #import "MINISOTabbarInitVM.h"
 #import "UITabBar+MINISOBadge.h"
-#import "UIImage+MINISOExtentsions.h"
+#import "UIImage+MINISOExtensions.h"
 
 @implementation MINISOTabbarInitVM
 
@@ -32,15 +32,15 @@ CGFloat const MINISOTabBarItemImageHeight = 25.0;
     MINISOShoppingItemViewController *shoppingVC = [[MINISOShoppingItemViewController alloc] init];
     shoppingVC.view.backgroundColor = MINISOClearColor;
     shoppingVC.tabBarItem.title = self.shoppingItemModel.itemName;
-    shoppingVC.tabBarItem.image = [UIImage imageNamed:self.shoppingItemModel.itemDefaultIcon];
-    shoppingVC.tabBarItem.selectedImage = [UIImage imageNamed:self.shoppingItemModel.itemSelectedIcon];
+    shoppingVC.tabBarItem.image = [UIImage imageNamed:self.centerItemModel.itemDefaultIcon];
+    shoppingVC.tabBarItem.selectedImage = [UIImage imageNamed:self.centerItemModel.itemSelectedIcon];
     //shoppingVC.tabBarItem.badgeValue = self.shoppingItemModel.itemBadgeValue;
     
     MINISOOrdersItemViewController *ordersVC = [[MINISOOrdersItemViewController alloc] init];
     ordersVC.view.backgroundColor = MINISOGrayColor;
     ordersVC.tabBarItem.title = self.ordersItemModel.itemName;
-    ordersVC.tabBarItem.image = [UIImage imageWithColor:[UIColor whiteColor]];//[UIImage imageNamed:self.ordersItemModel.itemDefaultIcon];
-    ordersVC.tabBarItem.selectedImage = [UIImage imageWithColor:[UIColor whiteColor]];//[UIImage imageNamed:self.ordersItemModel.itemSelectedIcon];
+    ordersVC.tabBarItem.image = [UIImage imageNamed:self.ordersItemModel.itemDefaultIcon];
+    ordersVC.tabBarItem.selectedImage = [UIImage imageNamed:self.ordersItemModel.itemSelectedIcon];
     //ordersVC.tabBarItem.badgeValue = self.ordersItemModel.itemBadgeValue;
     
     MINISOVerbItemViewController *verbsVC = [[MINISOVerbItemViewController alloc] init];
@@ -53,18 +53,18 @@ CGFloat const MINISOTabBarItemImageHeight = 25.0;
     MINISOCenterItemViewController *centerVC = [[MINISOCenterItemViewController alloc] init];
     centerVC.view.backgroundColor = MINISOClearColor;
     centerVC.tabBarItem.title = self.centerItemModel.itemName;
-    centerVC.tabBarItem.image = [UIImage imageNamed:self.centerItemModel.itemDefaultIcon];
-    centerVC.tabBarItem.selectedImage = [UIImage imageNamed:self.centerItemModel.itemSelectedIcon];
+    centerVC.tabBarItem.image = [UIImage imageWithColor:[UIColor whiteColor]];
+    centerVC.tabBarItem.selectedImage = [UIImage imageWithColor:[UIColor whiteColor]];
     //centerVC.tabBarItem.badgeValue = self.centerItemModel.itemBadgeValue;
     
-    UINavigationController *homeVCNavigation = [[UINavigationController alloc] initWithRootViewController:homeVC];
-    UINavigationController *shoppingVCNavigation = [[UINavigationController alloc] initWithRootViewController:shoppingVC];
-    UINavigationController *ordersVCNavigation = [[UINavigationController alloc] initWithRootViewController:ordersVC];
-    UINavigationController *verbsVCNavigation = [[UINavigationController alloc] initWithRootViewController:verbsVC];
-    UINavigationController *centerVCNavigation = [[UINavigationController alloc] initWithRootViewController:centerVC];
+    MINISOCustomNavigationVC *homeVCNavigation = [[MINISOCustomNavigationVC alloc] initWithRootViewController:homeVC];
+    MINISOCustomNavigationVC *shoppingVCNavigation = [[MINISOCustomNavigationVC alloc] initWithRootViewController:shoppingVC];
+    MINISOCustomNavigationVC *ordersVCNavigation = [[MINISOCustomNavigationVC alloc] initWithRootViewController:ordersVC];
+    MINISOCustomNavigationVC *verbsVCNavigation = [[MINISOCustomNavigationVC alloc] initWithRootViewController:verbsVC];
+    MINISOCustomNavigationVC *centerVCNavigation = [[MINISOCustomNavigationVC alloc] initWithRootViewController:centerVC];
     
     MINISOTabBarController *tabbarItemsVC = [[MINISOTabBarController alloc] init];
-    tabbarItemsVC.viewControllers = @[homeVCNavigation, shoppingVCNavigation, ordersVCNavigation, verbsVCNavigation, centerVCNavigation];
+    tabbarItemsVC.viewControllers = @[homeVCNavigation, ordersVCNavigation, centerVCNavigation, verbsVCNavigation, shoppingVCNavigation];
     [tabbarItemsVC customTabBarSetting];
     
     //设置TabBarBadgeView的值
@@ -82,19 +82,19 @@ CGFloat const MINISOTabBarItemImageHeight = 25.0;
     self.homeItemModel.itemBadgeValue = @"0";
     self.homeItemModel.itemIndex = 0;
     
-    self.shoppingItemModel = [[MINISOTabbarItemModel alloc] init];
-    self.shoppingItemModel.itemName = @"接收验厂";
-    self.shoppingItemModel.itemDefaultIcon = @"tabbarShoppingIcon";
-    self.shoppingItemModel.itemSelectedIcon = @"tabbarShoppingSelectedIcon";
-    self.shoppingItemModel.itemBadgeValue = @"0";
-    self.shoppingItemModel.itemIndex = 1;
-    
     self.ordersItemModel = [[MINISOTabbarItemModel alloc] init];
-    self.ordersItemModel.itemName = @"签到";
+    self.ordersItemModel.itemName = @"接收验厂";
     self.ordersItemModel.itemDefaultIcon = @"tabbarOrdersIcon";
     self.ordersItemModel.itemSelectedIcon = @"tabbarOrdersSelectedIcon";
     self.ordersItemModel.itemBadgeValue = @"0";
-    self.ordersItemModel.itemIndex = 2;
+    self.ordersItemModel.itemIndex = 1;
+    
+    self.centerItemModel = [[MINISOTabbarItemModel alloc] init];
+    self.centerItemModel.itemName = @"签到";
+    self.centerItemModel.itemDefaultIcon = @"tabbarCenterIcon";
+    self.centerItemModel.itemSelectedIcon = @"tabbarCenterSelectedIcon";
+    self.centerItemModel.itemBadgeValue = @"-1";
+    self.centerItemModel.itemIndex = 2;
     
     self.verbsItemModel = [[MINISOTabbarItemModel alloc] init];
     self.verbsItemModel.itemName = @"扫码";
@@ -103,12 +103,13 @@ CGFloat const MINISOTabBarItemImageHeight = 25.0;
     self.verbsItemModel.itemBadgeValue = @"0";
     self.verbsItemModel.itemIndex = 3;
     
-    self.centerItemModel = [[MINISOTabbarItemModel alloc] init];
-    self.centerItemModel.itemName = @"验货流程";
-    self.centerItemModel.itemDefaultIcon = @"tabbarCenterIcon";
-    self.centerItemModel.itemSelectedIcon = @"tabbarCenterSelectedIcon";
-    self.centerItemModel.itemBadgeValue = @"-1";
-    self.centerItemModel.itemIndex = 4;
+    self.shoppingItemModel = [[MINISOTabbarItemModel alloc] init];
+    self.shoppingItemModel.itemName = @"验货流程";
+    self.shoppingItemModel.itemDefaultIcon = @"tabbarShoppingIcon";
+    self.shoppingItemModel.itemSelectedIcon = @"tabbarShoppingSelectedIcon";
+    self.shoppingItemModel.itemBadgeValue = @"0";
+    self.shoppingItemModel.itemIndex = 4;
+    
 }
 
 //处理初始化的小红点

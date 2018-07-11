@@ -98,6 +98,7 @@
     refreshHeader.lastUpdatedTimeLabel.hidden = YES;
     self.baseUniversalTableView.mj_header = refreshHeader;
     self.baseUniversalTableView.mj_footer = [MJRefreshFooter footerWithRefreshingTarget:self refreshingAction:@selector(uploadTableViewData)];
+    self.baseUniversalTableView.mj_footer.hidden = YES;
 }
 
 - (void)pullTableViewData {
@@ -107,6 +108,7 @@
 
 - (void)uploadTableViewData {
     self.tableViewRefreshBlock(NO);
+    [self.baseUniversalTableView.mj_footer endRefreshing];
 }
 
 - (void)refreshDataBlock:(baseTableViewRefreshBlock) refreshBlock {
@@ -149,7 +151,7 @@
         id cellData = [_dataSourceArray objectAtIndex:indexPath.row];
         self.tableViewCellSelectBlock(cellData);
     }
-    NSLog(@"未初始化选中回调");
+    //NSLog(@"未初始化选中回调");
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {

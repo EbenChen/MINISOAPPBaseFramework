@@ -19,6 +19,9 @@
 #ifdef __OBJC__
 
 #import "MINISOAPPConfig.h"
+#import "UIView+MINISOExtensions.h"
+
+#import "MINISOCustomNavigationVC.h"
 
 #endif
 

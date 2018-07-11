@@ -7,8 +7,8 @@
 //
 
 #import "MINISOTabBarView.h"
-#import "UIImage+MINISOExtentsions.h"
-#import "UIView+MINISOExtentsions.h"
+#import "UIImage+MINISOExtensions.h"
+#import "UIView+MINISOExtensions.h"
 
 #define TabBarItemMagin 10
 
@@ -16,6 +16,7 @@
 
 - (instancetype)initWithFrame:(CGRect)frame {
     if (self = [super initWithFrame:frame]) {
+        [self addTopPartingLineView];
         [self addCenterItemBtn];
     }
     
@@ -50,6 +51,13 @@
     if ([self.delegate respondsToSelector:@selector(tabBarCenterItemBtnClick:)]) {
         [self.tabBarDelegate tabBarCenterItemBtnClick:self];
     }
+}
+
+//添加顶部分割线
+- (void)addTopPartingLineView {
+    UIImageView *partingView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, self.frame.size.width, 0.5f)];
+    partingView.backgroundColor = RGBSAMECOLOR(225);
+    [self addSubview:partingView];
 }
 
 //重写hitTest方法，去监听发布按钮的点击，目的是为了让凸出的部分点击也有反应

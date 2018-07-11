@@ -31,6 +31,7 @@
 #define STATUSBAR_ISHIDDEN [[UIApplication sharedApplication] isStatusBarHidden]
 #define STATUS_BAR_HEIGHT   (STATUSBAR_ISHIDDEN ?  0.0f : [UIApplication sharedApplication].statusBarFrame.size.height)
 #define TABBAR_HEGHT 49
+#define SCREEN_SAFE_HEIGHT (MAINSCREEN_HEIGHT - TABBAR_HEGHT - 64)
 #define SCREEN_HEIGHT      [UIScreen mainScreen].bounds.size.height -  STATUS_BAR_HEIGHT
 #define MAINSCREEN_HEIGHT  [UIScreen mainScreen].bounds.size.height
 ///获取设备屏幕宽度
@@ -47,7 +48,10 @@
 #define MINISOGrayColor [UIColor grayColor]
 #define MINISORedColor [UIColor redColor]
 #define MINISOTabBarTitleDefaultColor RGBSAMECOLOR(113)
-#define MINISOTabBarTitleSelectedColor RGBCOLOR (100, 174, 234)
+#define MINISOTabBarTitleSelectedColor RGBCOLOR(100, 174, 234)
+#define MINISONavigationBgColor RGBCOLOR(133,134,213)
+#define MINISONavigationTitleColor [UIColor whiteColor]
+#define MINISONavigationTintColor [UIColor whiteColor]
 
 #pragma mark ---默认占位图
 //正方形

@@ -34,12 +34,6 @@
     }];
 }
 
-//添加顶部分割线
-- (void)addTopPartingLineView {
-    UIImageView *partingView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, self.tabBar.frame.size.width, 0.5f)];
-    partingView.backgroundColor = RGBSAMECOLOR(225);
-    [self.tabBar addSubview:partingView];
-}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -59,8 +53,6 @@
     customTabBarView.tabBarDelegate = self;
     //kvc实质是修改了系统的_tabBar
     [self setValue:customTabBarView forKeyPath:@"tabBar"];
-
-    [self addTopPartingLineView];
 }
 
 //MINISOTabBarViewDelegate
