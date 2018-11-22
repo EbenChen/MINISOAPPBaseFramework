@@ -72,12 +72,11 @@
 }
 
 
--(UIBarButtonItem *)creatBackButton {
+- (UIBarButtonItem *)creatBackButton {
     return [[UIBarButtonItem alloc]initWithImage:[[UIImage imageNamed:@"leftItemBackWhite"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]style:UIBarButtonItemStylePlain target:self action:@selector(popSelf)];
-    
 }
 
--(void)popSelf {
+- (void)popSelf {
     
     [self navigationTransparentState:NO];
     

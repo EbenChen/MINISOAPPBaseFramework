@@ -12,7 +12,18 @@
 
 - (void)persentPreviewVCWithType:(NSInteger)type fileUrl:(NSString *)fileUrl finishBlock:(preViewVCBlock)finishBlock {
     self.previewVC = [[QLPreviewController alloc] init];
+    
+    //修改了这个外观对象，相当于修改了整个项目中的外观
+    UINavigationBar *navigationBar = [UINavigationBar appearance];
+    //设置导航栏背景颜色
+    [navigationBar setBarTintColor:MINISONavigationBgColor];
+    //设置NavigationBarItem文字的颜色
+    [navigationBar setTintColor:MINISOTabBarTitleSelectedColor];
+    //设置标题栏颜色
+    navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName:MINISOTabBarTitleSelectedColor,NSFontAttributeName : [UIFont systemFontOfSize:18]};
+    
     self.previewVC.dataSource = self;
+    
     if (type == 1) {
         [self previewNativeFileWithFileName:fileUrl presentBlock:finishBlock];
         

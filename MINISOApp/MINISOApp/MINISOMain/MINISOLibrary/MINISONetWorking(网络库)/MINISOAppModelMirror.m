@@ -211,7 +211,9 @@
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
     NSURLSessionDownloadTask *download = [manager downloadTaskWithRequest:request progress:^(NSProgress * _Nonnull downloadProgress) {
         //下载进度
-        NSLog(@"%f",1.0 * downloadProgress.completedUnitCount / downloadProgress.totalUnitCount);
+        NSString *progressValue = [NSString stringWithFormat:@"%d%%",(int)(1.0 * downloadProgress.completedUnitCount / downloadProgress.totalUnitCount * 100)];
+        NSLog(@"%@",progressValue);
+        //failBlock(progressValue);
     } destination:^NSURL * _Nonnull(NSURL * _Nonnull targetPath, NSURLResponse * _Nonnull response) {
         //保存的文件路径
         NSString *fullPath = [[NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) lastObject] stringByAppendingPathComponent:response.suggestedFilename];
@@ -220,7 +222,7 @@
         if (filePath) {
             successBlock(filePath);
         } else {
-           networkErrorBlock(error);
+            networkErrorBlock(error);
         }
     }];
     //执行Task
