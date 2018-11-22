@@ -77,6 +77,15 @@
 		F58B1C7720F48ED400A8EBFA /* UINavigationItem+MINISOExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = F58B1C7620F48ED400A8EBFA /* UINavigationItem+MINISOExtensions.m */; };
 		F58CCF7320DCA04800E2F8AA /* MINISOTabbarInitVM.m in Sources */ = {isa = PBXBuildFile; fileRef = F58CCF7220DCA04800E2F8AA /* MINISOTabbarInitVM.m */; };
 		F58CCF7620DCA7D700E2F8AA /* MINISOTabBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = F58CCF7520DCA7D700E2F8AA /* MINISOTabBarView.m */; };
+		F598CC6A21A6815B002DD9DC /* qms系统测试账号.xlsx in Resources */ = {isa = PBXBuildFile; fileRef = F598CC6921A6815B002DD9DC /* qms系统测试账号.xlsx */; };
+		F598CC7221A68926002DD9DC /* 新版iPhone尺寸.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = F598CC6B21A68926002DD9DC /* 新版iPhone尺寸.jpeg */; };
+		F598CC7321A68926002DD9DC /* 验厂报告详情缺少字段信息汇总.doc in Resources */ = {isa = PBXBuildFile; fileRef = F598CC6C21A68926002DD9DC /* 验厂报告详情缺少字段信息汇总.doc */; };
+		F598CC7421A68926002DD9DC /* qms系统测试账号.txt in Resources */ = {isa = PBXBuildFile; fileRef = F598CC6D21A68926002DD9DC /* qms系统测试账号.txt */; };
+		F598CC7521A68926002DD9DC /* IMG_2441.JPG in Resources */ = {isa = PBXBuildFile; fileRef = F598CC6E21A68926002DD9DC /* IMG_2441.JPG */; };
+		F598CC7621A68926002DD9DC /* SANGFOR_SSL自动构建参数单点登录配置指导_20130821.pdf in Resources */ = {isa = PBXBuildFile; fileRef = F598CC6F21A68926002DD9DC /* SANGFOR_SSL自动构建参数单点登录配置指导_20130821.pdf */; };
+		F598CC7721A68926002DD9DC /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = F598CC7021A68926002DD9DC /* README.md */; };
+		F598CC7821A68926002DD9DC /* WechatIMG10.pic in Resources */ = {isa = PBXBuildFile; fileRef = F598CC7121A68926002DD9DC /* WechatIMG10.pic */; };
+		F598CC7B21A68C5E002DD9DC /* MINISOAttachmentTools.m in Sources */ = {isa = PBXBuildFile; fileRef = F598CC7A21A68C5E002DD9DC /* MINISOAttachmentTools.m */; };
 		F59F49DB20E20C140062F261 /* UITabBar+MINISOBadge.m in Sources */ = {isa = PBXBuildFile; fileRef = F59F49DA20E20C140062F261 /* UITabBar+MINISOBadge.m */; };
 		F59F49DE20E20C6E0062F261 /* MINISOBadgeView.m in Sources */ = {isa = PBXBuildFile; fileRef = F59F49DD20E20C6E0062F261 /* MINISOBadgeView.m */; };
 		F5C6697920DB8AF400F13D63 /* MINISOTabbarItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F5C6697820DB8AF400F13D63 /* MINISOTabbarItemModel.m */; };
@@ -237,6 +246,16 @@
 		F58CCF7220DCA04800E2F8AA /* MINISOTabbarInitVM.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MINISOTabbarInitVM.m; sourceTree = "<group>"; };
 		F58CCF7420DCA7D700E2F8AA /* MINISOTabBarView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MINISOTabBarView.h; sourceTree = "<group>"; };
 		F58CCF7520DCA7D700E2F8AA /* MINISOTabBarView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MINISOTabBarView.m; sourceTree = "<group>"; };
+		F598CC6921A6815B002DD9DC /* qms系统测试账号.xlsx */ = {isa = PBXFileReference; lastKnownFileType = file; path = "qms系统测试账号.xlsx"; sourceTree = "<group>"; };
+		F598CC6B21A68926002DD9DC /* 新版iPhone尺寸.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "新版iPhone尺寸.jpeg"; sourceTree = "<group>"; };
+		F598CC6C21A68926002DD9DC /* 验厂报告详情缺少字段信息汇总.doc */ = {isa = PBXFileReference; lastKnownFileType = file; path = "验厂报告详情缺少字段信息汇总.doc"; sourceTree = "<group>"; };
+		F598CC6D21A68926002DD9DC /* qms系统测试账号.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "qms系统测试账号.txt"; sourceTree = "<group>"; };
+		F598CC6E21A68926002DD9DC /* IMG_2441.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_2441.JPG; sourceTree = "<group>"; };
+		F598CC6F21A68926002DD9DC /* SANGFOR_SSL自动构建参数单点登录配置指导_20130821.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "SANGFOR_SSL自动构建参数单点登录配置指导_20130821.pdf"; sourceTree = "<group>"; };
+		F598CC7021A68926002DD9DC /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		F598CC7121A68926002DD9DC /* WechatIMG10.pic */ = {isa = PBXFileReference; lastKnownFileType = file; path = WechatIMG10.pic; sourceTree = "<group>"; };
+		F598CC7921A68C5E002DD9DC /* MINISOAttachmentTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MINISOAttachmentTools.h; sourceTree = "<group>"; };
+		F598CC7A21A68C5E002DD9DC /* MINISOAttachmentTools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MINISOAttachmentTools.m; sourceTree = "<group>"; };
 		F59F49D920E20C140062F261 /* UITabBar+MINISOBadge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITabBar+MINISOBadge.h"; sourceTree = "<group>"; };
 		F59F49DA20E20C140062F261 /* UITabBar+MINISOBadge.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITabBar+MINISOBadge.m"; sourceTree = "<group>"; };
 		F59F49DC20E20C6E0062F261 /* MINISOBadgeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MINISOBadgeView.h; sourceTree = "<group>"; };
@@ -535,8 +554,18 @@
 		F51BA4E421A6491300865E78 /* MINISOReviewAttachment(查看附件) */ = {
 			isa = PBXGroup;
 			children = (
+				F598CC6B21A68926002DD9DC /* 新版iPhone尺寸.jpeg */,
+				F598CC6C21A68926002DD9DC /* 验厂报告详情缺少字段信息汇总.doc */,
+				F598CC6E21A68926002DD9DC /* IMG_2441.JPG */,
+				F598CC6D21A68926002DD9DC /* qms系统测试账号.txt */,
+				F598CC7021A68926002DD9DC /* README.md */,
+				F598CC6F21A68926002DD9DC /* SANGFOR_SSL自动构建参数单点登录配置指导_20130821.pdf */,
+				F598CC7121A68926002DD9DC /* WechatIMG10.pic */,
+				F598CC6921A6815B002DD9DC /* qms系统测试账号.xlsx */,
 				F51BA4E521A67AEE00865E78 /* MINISOAttachmentPreviewViewController.h */,
 				F51BA4E621A67AEE00865E78 /* MINISOAttachmentPreviewViewController.m */,
+				F598CC7921A68C5E002DD9DC /* MINISOAttachmentTools.h */,
+				F598CC7A21A68C5E002DD9DC /* MINISOAttachmentTools.m */,
 			);
 			path = "MINISOReviewAttachment(查看附件)";
 			sourceTree = "<group>";
@@ -991,19 +1020,27 @@
 			files = (
 				F52F52B220DA364D00647D7F /* LaunchScreen.storyboard in Resources */,
 				F5397BBF20E635DB00E16713 /* MINISOContentOneImageTableViewCell.xib in Resources */,
+				F598CC7521A68926002DD9DC /* IMG_2441.JPG in Resources */,
 				F5397BBD20E6355C00E16713 /* MINISOOnlyContentTextTableViewCell.xib in Resources */,
 				F518D21420F2EB5D00789C63 /* MINISOHomepageBannerView.xib in Resources */,
 				F518D22320F2F09500789C63 /* MINISOScavengingContentView.xib in Resources */,
 				F57358B020F6DC8E00C04410 /* MINISOLoginViewController.xib in Resources */,
 				F58B1C7120F44F0C00A8EBFA /* homePageTempListVC.xib in Resources */,
+				F598CC7721A68926002DD9DC /* README.md in Resources */,
+				F598CC7421A68926002DD9DC /* qms系统测试账号.txt in Resources */,
+				F598CC7621A68926002DD9DC /* SANGFOR_SSL自动构建参数单点登录配置指导_20130821.pdf in Resources */,
 				F5397BC120E6364400E16713 /* MINISOContentMoreImageTableViewCell.xib in Resources */,
+				F598CC6A21A6815B002DD9DC /* qms系统测试账号.xlsx in Resources */,
 				F52F52AF20DA364D00647D7F /* Assets.xcassets in Resources */,
 				2ADF986D20F32E17004A205B /* MINISO_Contact_View.xib in Resources */,
 				F518D21920F2EF7700789C63 /* MINISOAcceptsFactoryHeaderView.xib in Resources */,
 				2ADF987820F33551004A205B /* MINISO_SignIn_Propmt_ViewController.xib in Resources */,
 				F518D21E20F2F01500789C63 /* MINISOSigninListView.xib in Resources */,
+				F598CC7221A68926002DD9DC /* 新版iPhone尺寸.jpeg in Resources */,
+				F598CC7821A68926002DD9DC /* WechatIMG10.pic in Resources */,
 				F56C851920FC7F0F00716615 /* MINISOGuidePageView.xib in Resources */,
 				F518D22820F2F15200789C63 /* MINISOGoodsInspectionMainView.xib in Resources */,
+				F598CC7321A68926002DD9DC /* 验厂报告详情缺少字段信息汇总.doc in Resources */,
 				F566A41720F5E82D00EC9AB5 /* MBProgressHUD.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1076,6 +1113,7 @@
 				F58B1C7720F48ED400A8EBFA /* UINavigationItem+MINISOExtensions.m in Sources */,
 				F5397BAC20E6232B00E16713 /* MINISOOnlyContentTextTableViewCell.m in Sources */,
 				F58CCF7620DCA7D700E2F8AA /* MINISOTabBarView.m in Sources */,
+				F598CC7B21A68C5E002DD9DC /* MINISOAttachmentTools.m in Sources */,
 				F5E4FB4E20EA0F79002FC575 /* NSMutableDictionary+MINISOExtensions.m in Sources */,
 				F5397BB520E626B400E16713 /* UITableView+MINISOExtensions.m in Sources */,
 				F53A4EDB20E4C862009A1351 /* homePageDataModel.m in Sources */,

@@ -1,0 +1,25 @@
+角色		账号		密码
+验厂经理		plant_manager1	123
+供应商		vendor_test1	123
+供应商           authen_manager1    123
+商品部		commodity_test1	123
+第三方		third_test1	123
+质量经理         quality_manager1 123
+跟单员           employee03       123
+跟单主管         employee04        123
+验货助理         employee05        123
+验货员           employee06
+验货主管         employee07
+验货经理         employee08
+
+
+选品助手
+password: 123
+username: 17610752212
+
+
+///发布服务器账号密码
+IP：193.112.97.95  
+用户名：root  
+pwd：F8hsd#*sdkM64   
+文件夹路径：/datas/htdocs/www

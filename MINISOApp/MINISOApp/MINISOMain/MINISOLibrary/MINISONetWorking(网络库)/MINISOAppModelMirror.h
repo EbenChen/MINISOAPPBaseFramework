@@ -34,7 +34,7 @@ typedef void (^NetworkErrorBlock)(NSError* error);
 + (void)uploadFileWithFileUrl:(NSString *)fileUrl uid:(NSString *)uid successBlock:(UniversalCompletionBlock)successBlock failBlock:(NewErrmsgBlock)failBlock networkErrorBlock:(NetworkErrorBlock)networkErrorBlock;
 
 ///下载文件
-+ (void)downloadFileWithApiUrl:(NSString *)downloadUrl uid:(NSString *)uid successBlock:(UniversalCompletionBlock)successBlock failBlock:(NewErrmsgBlock)failBlock networkErrorBlock:(NetworkErrorBlock)networkErrorBlock;
++ (void)downloadFileWithApiUrl:(NSString *)downloadUrl successBlock:(UniversalCompletionBlock)successBlock failBlock:(NewErrmsgBlock)failBlock networkErrorBlock:(NetworkErrorBlock)networkErrorBlock;
 
 
 ///get请求示例

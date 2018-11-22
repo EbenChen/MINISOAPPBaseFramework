@@ -99,7 +99,7 @@ CGFloat const MINISOTabBarItemImageHeight = 25.0;
 
 - (MINISOShoppingItemViewController *)createShoppingItemVCWithMode:(BOOL)isCenter {
     MINISOShoppingItemViewController *shoppingVC = [[MINISOShoppingItemViewController alloc] init];
-    shoppingVC.view.backgroundColor = MINISOClearColor;
+    //shoppingVC.view.backgroundColor = MINISOClearColor;
     shoppingVC.tabBarItem.title = self.shoppingItemModel.itemName;
     
     

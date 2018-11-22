@@ -205,7 +205,7 @@
     }];
 }
 
-+ (void)downloadFileWithApiUrl:(NSString *)downloadUrl uid:(NSString *)uid successBlock:(UniversalCompletionBlock)successBlock failBlock:(NewErrmsgBlock)failBlock networkErrorBlock:(NetworkErrorBlock)networkErrorBlock {
++ (void)downloadFileWithApiUrl:(NSString *)downloadUrl successBlock:(UniversalCompletionBlock)successBlock failBlock:(NewErrmsgBlock)failBlock networkErrorBlock:(NetworkErrorBlock)networkErrorBlock {
     
     NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:downloadUrl]];
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
@@ -213,12 +213,15 @@
         //下载进度
         NSLog(@"%f",1.0 * downloadProgress.completedUnitCount / downloadProgress.totalUnitCount);
     } destination:^NSURL * _Nonnull(NSURL * _Nonnull targetPath, NSURLResponse * _Nonnull response) {
-        successBlock(response);
         //保存的文件路径
         NSString *fullPath = [[NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) lastObject] stringByAppendingPathComponent:response.suggestedFilename];
         return [NSURL fileURLWithPath:fullPath];
     } completionHandler:^(NSURLResponse * _Nonnull response, NSURL * _Nullable filePath, NSError * _Nullable error) {
-        networkErrorBlock(error);
+        if (filePath) {
+            successBlock(filePath);
+        } else {
+           networkErrorBlock(error);
+        }
     }];
     //执行Task
     [download resume];
