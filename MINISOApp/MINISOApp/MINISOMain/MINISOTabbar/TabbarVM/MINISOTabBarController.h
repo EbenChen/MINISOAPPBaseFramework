@@ -12,6 +12,6 @@
 @interface MINISOTabBarController : UITabBarController<MINISOTabBarViewDelegate>
 
 //设置TabBarView
-- (void)customTabBarSetting;
+- (void)customTabBarSettingWithCenterItemState:(BOOL)isCenter;
 
 @end

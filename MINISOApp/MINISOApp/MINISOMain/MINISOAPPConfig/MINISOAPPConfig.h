@@ -17,6 +17,7 @@
 
 #define DeleUserDefaultWithKey(key) [[NSUserDefaults standardUserDefaults] removeObjectForKey:key]
 #define UserDefaultSynchronize  [[NSUserDefaults standardUserDefaults] synchronize]
+#define MINISOWeakSelf __weak typeof(self) weakSelf = self;
 
 #pragma mark ---register key
 
@@ -26,6 +27,12 @@
 #define IS_IOS9 ([[[UIDevice currentDevice] systemVersion] floatValue] >= 9.0)
 #define IS_IOS10 ([[[UIDevice currentDevice] systemVersion] floatValue] >= 10.0)
 #define IS_IOS11 ([[[UIDevice currentDevice] systemVersion] floatValue] >= 11.0)
+
+#pragma mark ---Device Size
+#define IS_IPHONE5 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? (CGSizeEqualToSize(CGSizeMake(640, 1136), [[UIScreen mainScreen] currentMode].size)) : NO)
+#define IS_PHONE6 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? (CGSizeEqualToSize(CGSizeMake(750, 1334), [[UIScreen mainScreen] currentMode].size)) : NO)
+#define IS_PHONE6Plus  ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? (CGSizeEqualToSize(CGSizeMake(1242, 2208),[[UIScreen mainScreen] currentMode].size)) : NO)
+#define IS_IPhoneX ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1125, 2436), [[UIScreen mainScreen] currentMode].size) : NO) // 是否iphoneX
 
 #pragma mark ---mainScreen size
 #define STATUSBAR_ISHIDDEN [[UIApplication sharedApplication] isStatusBarHidden]

@@ -19,7 +19,11 @@
 #ifdef __OBJC__
 
 #import "MINISOAPPConfig.h"
+#import "MINISOUserModel.h"
+#import "MINISOSwitchConfig.h"
+#import "MINISOUserInformationModel.h"
 #import "UIView+MINISOExtensions.h"
+#import "MBProgressHUD+MINISOExtensions.h"
 
 #import "MINISOCustomNavigationVC.h"
 

@@ -45,10 +45,10 @@
 }
 
 //custom method
-- (void)customTabBarSetting {
+- (void)customTabBarSettingWithCenterItemState:(BOOL)isCenter {
     //设置TabBarItem标题的字体颜色
     MINISOTabBarView *customTabBarView = [[MINISOTabBarView alloc] initWithFrame:self.tabBar.bounds];
-    [customTabBarView tabBarViewSettingWithControllerAarrya:self.viewControllers];
+    [customTabBarView tabBarViewSettingWithControllerAarrya:self.viewControllers centerItemState:isCenter];
     
     customTabBarView.tabBarDelegate = self;
     //kvc实质是修改了系统的_tabBar

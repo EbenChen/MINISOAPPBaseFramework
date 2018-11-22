@@ -16,8 +16,6 @@
 
 - (instancetype)initWithFrame:(CGRect)frame {
     if (self = [super initWithFrame:frame]) {
-        [self addTopPartingLineView];
-        [self addCenterItemBtn];
     }
     
     return self;
@@ -58,6 +56,7 @@
     UIImageView *partingView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, self.frame.size.width, 0.5f)];
     partingView.backgroundColor = RGBSAMECOLOR(225);
     [self addSubview:partingView];
+    
 }
 
 //重写hitTest方法，去监听发布按钮的点击，目的是为了让凸出的部分点击也有反应
@@ -86,7 +85,7 @@
     }
 }
 
-- (void)tabBarViewSettingWithControllerAarrya:(NSArray *)controllerArrays {
+- (void)tabBarViewSettingWithControllerAarrya:(NSArray *)controllerArrays centerItemState:(BOOL)isCenter{
     
     NSDictionary *titleDefaultAttributDict = @{NSForegroundColorAttributeName:MINISOTabBarTitleDefaultColor, NSFontAttributeName:[UIFont systemFontOfSize:12.0f]};
     NSDictionary *titleAttributesDict = @{NSForegroundColorAttributeName:MINISOTabBarTitleSelectedColor, NSFontAttributeName:[UIFont systemFontOfSize:12.0f]};
@@ -97,6 +96,19 @@
         //选中字体颜色和大小
         [itemObject.tabBarItem setTitleTextAttributes:titleAttributesDict forState:UIControlStateSelected];
     }
+    
+    //是否设置中心按钮突起
+    if (isCenter) {
+        [self addCenterItemBtn];
+    } else {
+        if (self.itemCenterBtn != nil) {
+            [self.itemCenterBtn removeFromSuperview];
+            self.itemCenterBtn = nil;
+        }
+    }
+    
+    //添加分割线
+    [self addTopPartingLineView];
 }
 
 - (void)tabBarViewBadgeViewSettingWithController:(UINavigationController *)controller badgeValue:(NSString *)value{

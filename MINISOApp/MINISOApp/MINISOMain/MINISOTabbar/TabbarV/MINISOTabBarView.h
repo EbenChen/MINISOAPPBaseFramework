@@ -23,7 +23,7 @@
 @property (nonatomic, weak) id<MINISOTabBarViewDelegate> tabBarDelegate ;
 
 //对tabBar处理对象
-- (void)tabBarViewSettingWithControllerAarrya:(NSArray *)controllerArrays;
+- (void)tabBarViewSettingWithControllerAarrya:(NSArray *)controllerArrays centerItemState:(BOOL)isCenter;
 //设置Controller的badgeValue和badgeview
 - (void)tabBarViewBadgeViewSettingWithController:(UINavigationController *)controller badgeValue:(NSString *)value;
 

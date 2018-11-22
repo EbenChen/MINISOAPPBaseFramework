@@ -17,60 +17,146 @@ CGFloat const MINISOTabBarItemImageHeight = 25.0;
 - (MINISOTabBarController *)tabBarInitItemToKeyWindoForItemVC {
     [self tabBarItemModelInitForNative];
     
-    MINISOHomeItemViewController *homeVC = [[MINISOHomeItemViewController alloc] init];
-    homeVC.view.backgroundColor = MINISOWhiteColor;
-    homeVC.tabBarItem.title = self.homeItemModel.itemName;
-    //设置标题和图片之间的间距
-    homeVC.tabBarItem.titlePositionAdjustment = UIOffsetMake(0.0f, 0.0f);
-    homeVC.tabBarItem.image = [UIImage imageNamed:self.homeItemModel.itemDefaultIcon];
-    homeVC.tabBarItem.selectedImage = [UIImage imageNamed:self.homeItemModel.itemSelectedIcon];
-    //设置图片的位置
-    homeVC.tabBarItem.imageInsets = UIEdgeInsetsMake(-(homeVC.tabBarItem.selectedImage.size.height - MINISOTabBarItemImageHeight) * 0.5, 0, (homeVC.tabBarItem.selectedImage.size.height - MINISOTabBarItemImageHeight) * 0.5, 0);
-
-    //homeVC.tabBarItem.badgeValue = self.homeItemModel.itemBadgeValue;
+    BOOL isCenterState = NO;
     
-    MINISOShoppingItemViewController *shoppingVC = [[MINISOShoppingItemViewController alloc] init];
-    shoppingVC.view.backgroundColor = MINISOClearColor;
-    shoppingVC.tabBarItem.title = self.shoppingItemModel.itemName;
-    shoppingVC.tabBarItem.image = [UIImage imageNamed:self.centerItemModel.itemDefaultIcon];
-    shoppingVC.tabBarItem.selectedImage = [UIImage imageNamed:self.centerItemModel.itemSelectedIcon];
-    //shoppingVC.tabBarItem.badgeValue = self.shoppingItemModel.itemBadgeValue;
-    
-    MINISOOrdersItemViewController *ordersVC = [[MINISOOrdersItemViewController alloc] init];
-    ordersVC.view.backgroundColor = MINISOGrayColor;
-    ordersVC.tabBarItem.title = self.ordersItemModel.itemName;
-    ordersVC.tabBarItem.image = [UIImage imageNamed:self.ordersItemModel.itemDefaultIcon];
-    ordersVC.tabBarItem.selectedImage = [UIImage imageNamed:self.ordersItemModel.itemSelectedIcon];
-    //ordersVC.tabBarItem.badgeValue = self.ordersItemModel.itemBadgeValue;
-    
-    MINISOVerbItemViewController *verbsVC = [[MINISOVerbItemViewController alloc] init];
-    verbsVC.view.backgroundColor = MINISOClearColor;
-    verbsVC.tabBarItem.title = self.verbsItemModel.itemName;
-    verbsVC.tabBarItem.image = [UIImage imageNamed:self.verbsItemModel.itemDefaultIcon];
-    verbsVC.tabBarItem.selectedImage = [UIImage imageNamed:self.verbsItemModel.itemSelectedIcon];
-    //verbsVC.tabBarItem.badgeValue = self.verbsItemModel.itemBadgeValue;
-    
-    MINISOCenterItemViewController *centerVC = [[MINISOCenterItemViewController alloc] init];
-    centerVC.view.backgroundColor = MINISOClearColor;
-    centerVC.tabBarItem.title = self.centerItemModel.itemName;
-    centerVC.tabBarItem.image = [UIImage imageWithColor:[UIColor whiteColor]];
-    centerVC.tabBarItem.selectedImage = [UIImage imageWithColor:[UIColor whiteColor]];
-    //centerVC.tabBarItem.badgeValue = self.centerItemModel.itemBadgeValue;
-    
-    MINISOCustomNavigationVC *homeVCNavigation = [[MINISOCustomNavigationVC alloc] initWithRootViewController:homeVC];
-    MINISOCustomNavigationVC *shoppingVCNavigation = [[MINISOCustomNavigationVC alloc] initWithRootViewController:shoppingVC];
-    MINISOCustomNavigationVC *ordersVCNavigation = [[MINISOCustomNavigationVC alloc] initWithRootViewController:ordersVC];
-    MINISOCustomNavigationVC *verbsVCNavigation = [[MINISOCustomNavigationVC alloc] initWithRootViewController:verbsVC];
-    MINISOCustomNavigationVC *centerVCNavigation = [[MINISOCustomNavigationVC alloc] initWithRootViewController:centerVC];
+    MINISOCustomNavigationVC *homeVCNavigation = [[MINISOCustomNavigationVC alloc] initWithRootViewController:[self createHomeItemVCWithMode:NO]];
+    MINISOCustomNavigationVC *shoppingVCNavigation = [[MINISOCustomNavigationVC alloc] initWithRootViewController:[self createShoppingItemVCWithMode:NO]];
+    MINISOCustomNavigationVC *ordersVCNavigation = [[MINISOCustomNavigationVC alloc] initWithRootViewController:[self createOrdersItemVCWithMode:NO]];
+    MINISOCustomNavigationVC *verbsVCNavigation = [[MINISOCustomNavigationVC alloc] initWithRootViewController:[self createVerbItemVCWithMode:NO]];
+    MINISOCustomNavigationVC *centerVCNavigation = [[MINISOCustomNavigationVC alloc] initWithRootViewController:[self createCenterItemVCWithMode:isCenterState]];
     
     MINISOTabBarController *tabbarItemsVC = [[MINISOTabBarController alloc] init];
     tabbarItemsVC.viewControllers = @[homeVCNavigation, ordersVCNavigation, centerVCNavigation, verbsVCNavigation, shoppingVCNavigation];
-    [tabbarItemsVC customTabBarSetting];
+    [tabbarItemsVC customTabBarSettingWithCenterItemState:isCenterState];
     
     //设置TabBarBadgeView的值
     [self addTabBarBadgeViewValueToTabBar:tabbarItemsVC];
     
     return tabbarItemsVC;
+}
+
+- (MINISOTabBarController *)tabBarInitItemToLayer1Role {
+    [self tabBarItemModelInitForNative];
+    
+    BOOL isCenterState = NO;
+    
+    MINISOCustomNavigationVC *homeVCNavigation = [[MINISOCustomNavigationVC alloc] initWithRootViewController:[self createHomeItemVCWithMode:NO]];
+    MINISOCustomNavigationVC *ordersVCNavigation = [[MINISOCustomNavigationVC alloc] initWithRootViewController:[self createOrdersItemVCWithMode:NO]];
+    MINISOCustomNavigationVC *verbsVCNavigation = [[MINISOCustomNavigationVC alloc] initWithRootViewController:[self createVerbItemVCWithMode:NO]];
+    MINISOCustomNavigationVC *centerVCNavigation = [[MINISOCustomNavigationVC alloc] initWithRootViewController:[self createCenterItemVCWithMode:isCenterState]];
+    
+    MINISOTabBarController *tabbarItemsVC = [[MINISOTabBarController alloc] init];
+    tabbarItemsVC.viewControllers = @[homeVCNavigation, ordersVCNavigation, centerVCNavigation, verbsVCNavigation];
+    [tabbarItemsVC customTabBarSettingWithCenterItemState:isCenterState];
+    
+    //设置TabBarBadgeView的值
+    [self addTabBarBadgeViewValueToTabBar:tabbarItemsVC];
+    
+    return tabbarItemsVC;
+}
+
+- (MINISOTabBarController *)tabBarInitItemToLayer2Role {
+    [self tabBarItemModelInitForNative];
+    
+    BOOL isCenterState = NO;
+    
+    MINISOCustomNavigationVC *homeVCNavigation = [[MINISOCustomNavigationVC alloc] initWithRootViewController:[self createHomeItemVCWithMode:NO]];
+    MINISOCustomNavigationVC *shoppingVCNavigation = [[MINISOCustomNavigationVC alloc] initWithRootViewController:[self createShoppingItemVCWithMode:NO]];
+    MINISOCustomNavigationVC *centerVCNavigation = [[MINISOCustomNavigationVC alloc] initWithRootViewController:[self createCenterItemVCWithMode:isCenterState]];
+    
+    MINISOTabBarController *tabbarItemsVC = [[MINISOTabBarController alloc] init];
+    tabbarItemsVC.viewControllers = @[homeVCNavigation, centerVCNavigation, shoppingVCNavigation];
+    [tabbarItemsVC customTabBarSettingWithCenterItemState:isCenterState];
+    
+    //设置TabBarBadgeView的值
+    [self addTabBarBadgeViewValueToTabBar:tabbarItemsVC];
+    
+    return tabbarItemsVC;
+}
+
+//----奇数个item时方可设置isCenter为YES，其他情况均设置为NO
+- (MINISOHomeItemViewController *)createHomeItemVCWithMode:(BOOL)isCenter {
+    MINISOHomeItemViewController *homeVC = [[MINISOHomeItemViewController alloc] init];
+    homeVC.view.backgroundColor = MINISOWhiteColor;
+    homeVC.tabBarItem.title = self.homeItemModel.itemName;
+    
+    if (isCenter) {
+        homeVC.tabBarItem.image = [UIImage imageWithColor:[UIColor whiteColor]];
+        homeVC.tabBarItem.selectedImage = [UIImage imageWithColor:[UIColor whiteColor]];
+    } else {
+        homeVC.tabBarItem.image = [UIImage imageNamed:self.homeItemModel.itemDefaultIcon];
+        homeVC.tabBarItem.selectedImage = [UIImage imageNamed:self.homeItemModel.itemSelectedIcon];
+    }
+    
+    //设置标题和图片之间的间距
+    homeVC.tabBarItem.titlePositionAdjustment = UIOffsetMake(0.0f, 0.0f);
+    
+    //设置图片的位置
+    homeVC.tabBarItem.imageInsets = UIEdgeInsetsMake(-(homeVC.tabBarItem.selectedImage.size.height - MINISOTabBarItemImageHeight) * 0.5, 0, (homeVC.tabBarItem.selectedImage.size.height - MINISOTabBarItemImageHeight) * 0.5, 0);
+    
+    return homeVC;
+}
+
+- (MINISOShoppingItemViewController *)createShoppingItemVCWithMode:(BOOL)isCenter {
+    MINISOShoppingItemViewController *shoppingVC = [[MINISOShoppingItemViewController alloc] init];
+    shoppingVC.view.backgroundColor = MINISOClearColor;
+    shoppingVC.tabBarItem.title = self.shoppingItemModel.itemName;
+    
+    
+    if (isCenter) {
+        shoppingVC.tabBarItem.image = [UIImage imageWithColor:[UIColor whiteColor]];
+        shoppingVC.tabBarItem.selectedImage = [UIImage imageWithColor:[UIColor whiteColor]];
+    } else {
+        shoppingVC.tabBarItem.image = [UIImage imageNamed:self.shoppingItemModel.itemDefaultIcon];
+        shoppingVC.tabBarItem.selectedImage = [UIImage imageNamed:self.shoppingItemModel.itemSelectedIcon];
+    }
+    return shoppingVC;
+}
+
+- (MINISOOrdersItemViewController *)createOrdersItemVCWithMode:(BOOL)isCenter {
+    MINISOOrdersItemViewController *ordersVC = [[MINISOOrdersItemViewController alloc] init];
+    ordersVC.view.backgroundColor = MINISOGrayColor;
+    ordersVC.tabBarItem.title = self.ordersItemModel.itemName;
+    
+    
+    if (isCenter) {
+        ordersVC.tabBarItem.image = [UIImage imageWithColor:[UIColor whiteColor]];
+        ordersVC.tabBarItem.selectedImage = [UIImage imageWithColor:[UIColor whiteColor]];
+    } else {
+        ordersVC.tabBarItem.image = [UIImage imageNamed:self.ordersItemModel.itemDefaultIcon];
+        ordersVC.tabBarItem.selectedImage = [UIImage imageNamed:self.ordersItemModel.itemSelectedIcon];
+    }
+    return ordersVC;
+}
+
+- (MINISOVerbItemViewController *)createVerbItemVCWithMode:(BOOL)isCenter {
+    MINISOVerbItemViewController *verbsVC = [[MINISOVerbItemViewController alloc] init];
+    verbsVC.view.backgroundColor = MINISOWhiteColor;
+    verbsVC.tabBarItem.title = self.verbsItemModel.itemName;
+    
+    if (isCenter) {
+        verbsVC.tabBarItem.image = [UIImage imageWithColor:[UIColor whiteColor]];
+        verbsVC.tabBarItem.selectedImage = [UIImage imageWithColor:[UIColor whiteColor]];
+    } else {
+        verbsVC.tabBarItem.image = [UIImage imageNamed:self.verbsItemModel.itemDefaultIcon];
+        verbsVC.tabBarItem.selectedImage = [UIImage imageNamed:self.verbsItemModel.itemSelectedIcon];
+    }
+    return verbsVC;
+}
+
+- (MINISOCenterItemViewController *)createCenterItemVCWithMode:(BOOL)isCenter {
+    MINISOCenterItemViewController *centerVC = [[MINISOCenterItemViewController alloc] init];
+    centerVC.view.backgroundColor = MINISOWhiteColor;
+    centerVC.tabBarItem.title = self.centerItemModel.itemName;
+    
+    if (isCenter) {
+        centerVC.tabBarItem.image = [UIImage imageWithColor:[UIColor whiteColor]];
+        centerVC.tabBarItem.selectedImage = [UIImage imageWithColor:[UIColor whiteColor]];
+    } else {
+        centerVC.tabBarItem.image = [UIImage imageNamed:self.centerItemModel.itemDefaultIcon];
+        centerVC.tabBarItem.selectedImage = [UIImage imageNamed:self.centerItemModel.itemSelectedIcon];
+    }
+    return centerVC;
 }
 
 //本地数据初始化item model

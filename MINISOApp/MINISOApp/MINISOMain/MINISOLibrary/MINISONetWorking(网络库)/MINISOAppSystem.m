@@ -8,6 +8,7 @@
 
 #import "MINISOAppSystem.h"
 #import <UIKit/UIKit.h>
+#import "sys/utsname.h"
 #import <AdSupport/AdSupport.h>
 #import "MINISOApiConfig.h"
 #import "NSString+MINISOExtensions.h"
@@ -126,6 +127,31 @@ static NSString *serviceTimeSpace = nil;
     //系统统一参数初始化
     DEFAULT_USERAGENT_SETTING;
     SYNC_DEFAULT_USERAGENT;
+    return data;
+}
+
++ (NSDictionary *)getDeviceInformation {
+    NSMutableDictionary * data = [[NSMutableDictionary alloc] initWithCapacity:0];
+    //系统级参数
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
+    NSString *currentDateStr = [dateFormatter stringFromDate:[NSDate date]];
+    [data setObject:currentDateStr forKey:@"downTime"];
+    struct utsname systemInfo;
+    uname(&systemInfo);
+    NSString *deviceString = [UIDevice currentDevice].name;//[NSString stringWithCString:systemInfo.machine encoding:NSUTF8StringEncoding];
+    [data setObject:deviceString forKey:@"device"];
+    NSString *deviceSystem = [NSString stringWithFormat:@"%@ %@", [UIDevice currentDevice].systemName, [[UIDevice currentDevice] systemVersion]];
+    [data setObject:deviceSystem forKey:@"deviceSystem"];
+    NSString *uuid = [[UIDevice currentDevice] identifierForVendor].UUIDString;
+    [data setObject:uuid forKey:@"uuid"];
+    [data setObject:[OpenUDID value] forKey:@"udid"];
+    [data setObject:[MINISOAppSystem getAppShortVersion] forKey:@"version"];
+    NSString *idfa = [[[ASIdentifierManager sharedManager] advertisingIdentifier] UUIDString];
+    [data setObject:idfa ? idfa : @"" forKey:@"deviceId"];
+    NSArray *languageArray = [NSLocale preferredLanguages];
+    NSString *systemLanguage = [languageArray objectAtIndex:0];
+    [data setObject:systemLanguage forKey:@"language"];
     return data;
 }
 

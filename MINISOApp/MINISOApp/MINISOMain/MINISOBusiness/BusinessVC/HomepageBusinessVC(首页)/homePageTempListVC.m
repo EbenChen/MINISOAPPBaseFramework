@@ -7,7 +7,6 @@
 //
 
 #import "homePageTempListVC.h"
-#import "MBProgressHUD+MINISOExtensions.h"
 #import "UINavigationItem+MINISOExtensions.h"
 
 @interface homePageTempListVC ()

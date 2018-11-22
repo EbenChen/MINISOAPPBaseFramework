@@ -41,6 +41,11 @@ typedef NS_ENUM(NSInteger, SYSTEMKEY) {
 + (NSDictionary *)getSystemParameterData;
 
 /**
+ * 获取设备相关信息
+ **/
++ (NSDictionary *)getDeviceInformation;
+
+/**
  *  获得加密key
  *
  *  @param secretkey SYSTEMKEY

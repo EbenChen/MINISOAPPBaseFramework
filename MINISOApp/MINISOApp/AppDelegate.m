@@ -8,8 +8,15 @@
 
 #import "AppDelegate.h"
 #import "MINISOTabbarInitVM.h"
+#import "MINISOLoginViewController.h"
+#import "MINISOGuideViewController.h"
 
-@interface AppDelegate ()
+@interface AppDelegate (){
+    
+    MINISOGuideViewController *guideVC;
+    MINISOLoginViewController *loginVC;
+    MINISOTabBarController *rootItemVC;
+}
 
 @end
 
@@ -21,7 +28,7 @@
     //test push
     
     //初始化入口
-    [self initTabBarVCToKeyWindos];
+    [self createWindowsRootVC];
     
     return YES;
 }
@@ -55,11 +62,78 @@
 
 
 ////custom Method
-//Create TabBar Item on The KeyWindows
-- (void)initTabBarVCToKeyWindos {
+//Create root VC Enter
+- (void)createWindowsRootVC {
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    self.window.rootViewController = [[MINISOTabbarInitVM new] tabBarInitItemToKeyWindoForItemVC];
+    
+    if ([self isFirstLauch]) {
+        [self createGuideVCFunction];
+    } else {
+        [self appEnterChooseForUserState];
+    }
+    
     [self.window makeKeyAndVisible];
+}
+
+//Create TabBar Item on The KeyWindows
+- (MINISOTabBarController *)createTabBarVCToKeyWindos {
+    MINISOUserModel *currentModel = [[MINISOUserInformationModel currentUserModel] obtainUserInformationModel];
+    MINISOUserAuthority authority = (MINISOUserAuthority)currentModel.userAuthority;
+    if ( authority == MINISOUserAuthorityLayer1 ) {
+        //角色1
+        rootItemVC = [[MINISOTabbarInitVM new] tabBarInitItemToLayer1Role];
+    } else if ( authority == MINISOUserAuthorityLayer2) {
+        rootItemVC = [[MINISOTabbarInitVM new] tabBarInitItemToLayer2Role];
+    } else {
+        rootItemVC = [[MINISOTabbarInitVM new] tabBarInitItemToKeyWindoForItemVC];
+    }
+    
+    return rootItemVC;
+}
+
+//Create app Enter choose
+- (void)appEnterChooseForUserState {
+    BOOL loginState = [[MINISOUserInformationModel currentUserModel] obtainUsrIsLogin];
+    
+    if (!loginState) {
+        loginVC = [[MINISOLoginViewController alloc] initWithNibName:@"MINISOLoginViewController" bundle:nil];
+        self.window.rootViewController = loginVC;
+        MINISOWeakSelf;
+        loginVC.callBack = ^{
+            weakSelf.window.rootViewController = [weakSelf createTabBarVCToKeyWindos];
+        };
+    } else {
+        self.window.rootViewController = [self createTabBarVCToKeyWindos];
+    }
+}
+
+//启动app引导页
+- (void)createGuideVCFunction {
+    guideVC = [[MINISOGuideViewController alloc] init];
+    self.window.rootViewController = guideVC;
+    MINISOWeakSelf;
+    guideVC.callBack = ^{
+        [weakSelf appEnterChooseForUserState];
+    };
+}
+
+//guideVC display 判断是不是首次登录或者版本更新
+- (BOOL)isFirstLauch {
+    
+    //获取当前版本号
+    NSDictionary *infoDic = [[NSBundle mainBundle] infoDictionary];
+    NSString *currentAppVersion = infoDic[@"CFBundleShortVersionString"];
+    
+    //获取上次启动应用保存的appVersion
+    NSString *version = GetUserDefaultWithKey(MINISOGUIDEVERSION);
+    //版本升级或首次登录
+    if (version == nil || ![version isEqualToString:currentAppVersion]) {
+        SetUserDefaultKeyWithObject(MINISOGUIDEVERSION, currentAppVersion);
+        UserDefaultSynchronize;
+        return YES;
+    } else {
+        return NO;
+    }
 }
 
 @end

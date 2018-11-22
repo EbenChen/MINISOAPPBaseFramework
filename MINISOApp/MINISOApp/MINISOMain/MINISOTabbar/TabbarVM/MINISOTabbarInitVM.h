@@ -25,4 +25,9 @@
 
 - (MINISOTabBarController *)tabBarInitItemToKeyWindoForItemVC;
 
+//layer1 role
+- (MINISOTabBarController *)tabBarInitItemToLayer1Role;
+
+- (MINISOTabBarController *)tabBarInitItemToLayer2Role;
+
 @end
